@@ -1,4 +1,4 @@
-namespace BiztalkEnchereSchemas {
+namespace BiztalkEnchereOrchestration.WebServiceEnchere {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -9,39 +9,28 @@ namespace BiztalkEnchereSchemas {
     [Schema(@"http://BiztalkEnchereSchemas.DemandeCreationEnchere",@"DemandeCreationEnchere")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"DemandeCreationEnchere"})]
-    public sealed class DemandeCreationEnchere : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class Reference : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns=""http://BiztalkEnchereSchemas.DemandeCreationEnchere"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""http://BiztalkEnchereSchemas.DemandeCreationEnchere"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:element name=""DemandeCreationEnchere"">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name=""NomEnchere"" type=""xs:string"" />
-        <xs:element name=""PrixMinimum"">
-          <xs:simpleType>
-            <xs:restriction base=""xs:decimal"" />
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name=""OptionTransport"" type=""xs:string"" />
-        <xs:element name=""Duree"">
-          <xs:simpleType>
-            <xs:restriction base=""xs:unsignedInt"" />
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name=""TypeEnchere"" type=""xs:string"" />
-        <xs:element name=""Categorie"" type=""xs:string"" />
-        <xs:element name=""MotsCles"" type=""xs:string"" />
-        <xs:element name=""AutresInformations"" type=""xs:string"" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:tns=""http://BiztalkEnchereSchemas.DemandeCreationEnchere"" elementFormDefault=""qualified"" targetNamespace=""http://BiztalkEnchereSchemas.DemandeCreationEnchere"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+  <xs:element name=""DemandeCreationEnchere"" nillable=""true"" type=""tns:DemandeCreationEnchere"" />
+  <xs:complexType name=""DemandeCreationEnchere"">
+    <xs:attribute name=""NomEnchere"" type=""xs:string"" />
+    <xs:attribute name=""PrixMinimum"" type=""xs:decimal"" use=""required"" />
+    <xs:attribute name=""OptionTransport"" type=""xs:string"" />
+    <xs:attribute name=""Duree"" type=""xs:int"" use=""required"" />
+    <xs:attribute name=""TypeEnchere"" type=""xs:string"" />
+    <xs:attribute name=""Categorie"" type=""xs:string"" />
+    <xs:attribute name=""MotsCles"" type=""xs:string"" />
+    <xs:attribute name=""AutresInformations"" type=""xs:string"" />
+  </xs:complexType>
 </xs:schema>";
         
-        public DemandeCreationEnchere() {
+        public Reference() {
         }
         
         public override string XmlContent {

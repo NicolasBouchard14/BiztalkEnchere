@@ -2,7 +2,7 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="2837c7e1-acdd-4df9-bbc9-9258edb04edb" LowerBound="1.1" HigherBound="24.1">
+    <om:Element Type="Module" OID="2837c7e1-acdd-4df9-bbc9-9258edb04edb" LowerBound="1.1" HigherBound="39.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="BiztalkEnchereOrchestration" />
         <om:Property Name="Signal" Value="False" />
@@ -25,30 +25,112 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="ServiceDeclaration" OID="269bfa15-0248-4a13-981e-ba6a2919f1a0" ParentLink="Module_ServiceDeclaration" LowerBound="11.1" HigherBound="23.1">
+        <om:Element Type="ServiceDeclaration" OID="269bfa15-0248-4a13-981e-ba6a2919f1a0" ParentLink="Module_ServiceDeclaration" LowerBound="11.1" HigherBound="38.1">
             <om:Property Name="InitializedTransactionType" Value="False" />
-            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="ProcessusEnchere" />
             <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="81264f22-038b-45b3-86dc-b0b9d199254c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_.SauvegarderDemandeCreationEnchere_response" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SauvegarderDemandeCreationEnchereResponseMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="02f1b5d1-07bf-425a-9623-efba4f722c6c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="19.1" HigherBound="20.1">
+                <om:Property Name="Type" Value="BiztalkEnchereSchemas.DemandeCreationEnchere" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DemandeCreationEnchereMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e7aa47af-5449-4f72-bc68-4efa1980ba5d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="20.1" HigherBound="21.1">
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_.SauvegarderDemandeCreationEnchere_request" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SauvegarderDemandeCreationEnchereRequestMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
             <om:Element Type="ServiceBody" OID="7690d739-aa29-4a6e-9d7b-cd0c03a7d150" ParentLink="ServiceDeclaration_ServiceBody">
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="Receive" OID="34978426-810a-4c68-ab31-a1b94dd48339" ParentLink="ServiceBody_Statement" LowerBound="19.1" HigherBound="21.1">
-                    <om:Property Name="Activate" Value="False" />
+                <om:Element Type="Receive" OID="34978426-810a-4c68-ab31-a1b94dd48339" ParentLink="ServiceBody_Statement" LowerBound="23.1" HigherBound="25.1">
+                    <om:Property Name="Activate" Value="True" />
                     <om:Property Name="PortName" Value="PortReception_DemandeCreationEnchere" />
-                    <om:Property Name="MessageName" Value="DemandeCreationEnchere" />
+                    <om:Property Name="MessageName" Value="DemandeCreationEnchereMessage" />
                     <om:Property Name="OperationName" Value="Opération_1" />
                     <om:Property Name="OperationMessageName" Value="Requête" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="RecevoirDemandeCreationEnchere" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
+                <om:Element Type="Construct" OID="d5495ee1-9614-4914-92ec-1f92bc1adce0" ParentLink="ServiceBody_Statement" LowerBound="25.1" HigherBound="32.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstruireSauvegarderDemandeCreationEnchereRequestMessage" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="0ed09d56-e7ad-45b5-8f8c-be106b563e18" ParentLink="ComplexStatement_Statement" LowerBound="28.1" HigherBound="31.1">
+                        <om:Property Name="Expression" Value="SauvegarderDemandeCreationEnchereResponseMessage.SauvegarderDemandeCreationEnchereResult = true;&#xD;&#xA;SauvegarderDemandeCreationEnchereRequestMessage.demandeCreationEnchere = DemandeCreationEnchereMessage;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="AssignationSauvegarderDemandeCreationEnchere" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="510fd222-0158-4555-935d-30f03c126174" ParentLink="Construct_MessageRef" LowerBound="26.23" HigherBound="26.70">
+                        <om:Property Name="Ref" Value="SauvegarderDemandeCreationEnchereRequestMessage" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="d20b8d33-f742-430f-b22a-18a87c0806b7" ParentLink="Construct_MessageRef" LowerBound="26.72" HigherBound="26.120">
+                        <om:Property Name="Ref" Value="SauvegarderDemandeCreationEnchereResponseMessage" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="fc7fe3fc-643d-46d8-b79a-a823951deac5" ParentLink="ServiceBody_Statement" LowerBound="32.1" HigherBound="34.1">
+                    <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                    <om:Property Name="MessageName" Value="SauvegarderDemandeCreationEnchereRequestMessage" />
+                    <om:Property Name="OperationName" Value="SauvegarderDemandeCreationEnchere" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EnvoyerSauvegarderDemandeCreationEnchereRequest" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="8ba85dd3-5d6a-4fb6-927a-f2a159410c0a" ParentLink="ServiceBody_Statement" LowerBound="34.1" HigherBound="36.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                    <om:Property Name="MessageName" Value="SauvegarderDemandeCreationEnchereResponseMessage" />
+                    <om:Property Name="OperationName" Value="SauvegarderDemandeCreationEnchere" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="RecevoirSauvegarderDemandeCreationEnchereResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="f1a5d2ae-15dd-44d1-9cf7-0ebd13e86bec" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="14.1" HigherBound="16.1">
+            <om:Element Type="PortDeclaration" OID="dff00eb0-11d8-4528-831f-f683fe9a1e2a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="14.1" HigherBound="16.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="0" />
+                <om:Property Name="IsWebPort" Value="True" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_.ServiceEnchere_NB" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PhysicalBindingAttribute" OID="73d3e562-fcdc-4742-b528-c76980216452" ParentLink="PortDeclaration_CLRAttribute" LowerBound="14.1" HigherBound="15.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruReceive" />
+                    <om:Property Name="OutPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" />
+                    <om:Property Name="TransportType" Value="SOAP" />
+                    <om:Property Name="URI" Value="http://localhost:55661/ServiceEnchere_NB.asmx" />
+                    <om:Property Name="IsDynamic" Value="False" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f1a5d2ae-15dd-44d1-9cf7-0ebd13e86bec" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="16.1" HigherBound="18.1">
                 <om:Property Name="PortModifier" Value="Implements" />
                 <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="PortIndex" Value="0" />
                 <om:Property Name="IsWebPort" Value="False" />
                 <om:Property Name="OrderedDelivery" Value="False" />
                 <om:Property Name="DeliveryNotification" Value="None" />
@@ -57,16 +139,9 @@
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="PortReception_DemandeCreationEnchere" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="fbc13d37-3924-4e50-8929-4505449f7d5b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="14.1" HigherBound="15.1">
+                <om:Element Type="LogicalBindingAttribute" OID="fbc13d37-3924-4e50-8929-4505449f7d5b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="16.1" HigherBound="17.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-            </om:Element>
-            <om:Element Type="MessageDeclaration" OID="02f1b5d1-07bf-425a-9623-efba4f722c6c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="16.1" HigherBound="17.1">
-                <om:Property Name="Type" Value="BiztalkEnchereSchemas.DemandeCreationEnchere" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="DemandeCreationEnchere" />
-                <om:Property Name="Signal" Value="True" />
             </om:Element>
         </om:Element>
     </om:Element>
@@ -85,13 +160,28 @@ module BiztalkEnchereOrchestration
     [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
     internal service ProcessusEnchere
     {
+        [Microsoft.XLANGs.BaseTypes.PhysicalBinding("SOAP", "http://localhost:55661/ServiceEnchere_NB.asmx", typeof(Microsoft.BizTalk.DefaultPipelines.PassThruReceive), typeof(Microsoft.BizTalk.DefaultPipelines.PassThruTransmit), Proxy=typeof(BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_.ServiceEnchere_NB))]
+        port uses WebServiceEnchere.ServiceEnchere_NB_.ServiceEnchere_NB PortEnvoi_SauvegarderDemandeCreationEnchereRequest;
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
         port implements PortReceptionType_DemandeCreationEnchere PortReception_DemandeCreationEnchere;
-        message BiztalkEnchereSchemas.DemandeCreationEnchere DemandeCreationEnchere;
+        message WebServiceEnchere.ServiceEnchere_NB_.SauvegarderDemandeCreationEnchere_response SauvegarderDemandeCreationEnchereResponseMessage;
+        message BiztalkEnchereSchemas.DemandeCreationEnchere DemandeCreationEnchereMessage;
+        message WebServiceEnchere.ServiceEnchere_NB_.SauvegarderDemandeCreationEnchere_request SauvegarderDemandeCreationEnchereRequestMessage;
         body ()
         {
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("34978426-810a-4c68-ab31-a1b94dd48339")]
-            receive (PortReception_DemandeCreationEnchere.Opération_1, DemandeCreationEnchere);
+            activate receive (PortReception_DemandeCreationEnchere.Opération_1, DemandeCreationEnchereMessage);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d5495ee1-9614-4914-92ec-1f92bc1adce0")]
+            construct SauvegarderDemandeCreationEnchereRequestMessage, SauvegarderDemandeCreationEnchereResponseMessage
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0ed09d56-e7ad-45b5-8f8c-be106b563e18")]
+                SauvegarderDemandeCreationEnchereResponseMessage.SauvegarderDemandeCreationEnchereResult = true;
+                SauvegarderDemandeCreationEnchereRequestMessage.demandeCreationEnchere = DemandeCreationEnchereMessage;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fc7fe3fc-643d-46d8-b79a-a823951deac5")]
+            send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderDemandeCreationEnchere, SauvegarderDemandeCreationEnchereRequestMessage);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8ba85dd3-5d6a-4fb6-927a-f2a159410c0a")]
+            receive (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderDemandeCreationEnchere, SauvegarderDemandeCreationEnchereResponseMessage);
         }
     }
 }

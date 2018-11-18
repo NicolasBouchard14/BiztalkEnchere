@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://BiztalkEnchereSchemas.DemandeCreationEnchere" elementFormDefault="qualified" targetNamespace="http://BiztalkEnchereSchemas.DemandeCreationEnchere" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DemandeCreationEnchere" nillable="true" type="tns:DemandeCreationEnchere" />
+  <xs:complexType name="DemandeCreationEnchere">
+    <xs:attribute name="NomEnchere" type="xs:string" />
+    <xs:attribute name="PrixMinimum" type="xs:decimal" use="required" />
+    <xs:attribute name="OptionTransport" type="xs:string" />
+    <xs:attribute name="Duree" type="xs:int" use="required" />
+    <xs:attribute name="TypeEnchere" type="xs:string" />
+    <xs:attribute name="Categorie" type="xs:string" />
+    <xs:attribute name="MotsCles" type="xs:string" />
+    <xs:attribute name="AutresInformations" type="xs:string" />
+  </xs:complexType>
+</xs:schema>
