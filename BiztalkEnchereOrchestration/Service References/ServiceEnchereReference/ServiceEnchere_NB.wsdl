@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SauvegarderDemandeCreationEnchere">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="demandeCreationEnchere" type="tns:DemandeCreationEnchere" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DemandeCreationEnchere">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NomEnchere" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrixMinimum" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="OptionTransport" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Duree" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeEnchere" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Categorie" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MotsCles" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AutresInformations" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SauvegarderDemandeCreationEnchereResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SauvegarderDemandeCreationEnchereResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SauvegarderEncherissement">
+        <s:complexType />
+      </s:element>
+      <s:element name="SauvegarderEncherissementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SauvegarderEncherissementResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BannirEncherisseurGagnant">
+        <s:complexType />
+      </s:element>
+      <s:element name="BannirEncherisseurGagnantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BannirEncherisseurGagnantResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SauvegarderInfosPaiement">
+        <s:complexType />
+      </s:element>
+      <s:element name="SauvegarderInfosPaiementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SauvegarderInfosPaiementResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InformerVendeurNouveauResultat">
+        <s:complexType />
+      </s:element>
+      <s:element name="InformerVendeurNouveauResultatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformerVendeurNouveauResultatResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SauvegarderEvaluation">
+        <s:complexType />
+      </s:element>
+      <s:element name="SauvegarderEvaluationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SauvegarderEvaluationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AffecterEvaluationAgent">
+        <s:complexType />
+      </s:element>
+      <s:element name="AffecterEvaluationAgentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AffecterEvaluationAgentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BannirVendeur">
+        <s:complexType />
+      </s:element>
+      <s:element name="BannirVendeurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BannirVendeurResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SauvegarderDemandeCreationEnchereSoapIn">
+    <wsdl:part name="parameters" element="tns:SauvegarderDemandeCreationEnchere" />
+  </wsdl:message>
+  <wsdl:message name="SauvegarderDemandeCreationEnchereSoapOut">
+    <wsdl:part name="parameters" element="tns:SauvegarderDemandeCreationEnchereResponse" />
+  </wsdl:message>
+  <wsdl:message name="SauvegarderEncherissementSoapIn">
+    <wsdl:part name="parameters" element="tns:SauvegarderEncherissement" />
+  </wsdl:message>
+  <wsdl:message name="SauvegarderEncherissementSoapOut">
+    <wsdl:part name="parameters" element="tns:SauvegarderEncherissementResponse" />
+  </wsdl:message>
+  <wsdl:message name="BannirEncherisseurGagnantSoapIn">
+    <wsdl:part name="parameters" element="tns:BannirEncherisseurGagnant" />
+  </wsdl:message>
+  <wsdl:message name="BannirEncherisseurGagnantSoapOut">
+    <wsdl:part name="parameters" element="tns:BannirEncherisseurGagnantResponse" />
+  </wsdl:message>
+  <wsdl:message name="SauvegarderInfosPaiementSoapIn">
+    <wsdl:part name="parameters" element="tns:SauvegarderInfosPaiement" />
+  </wsdl:message>
+  <wsdl:message name="SauvegarderInfosPaiementSoapOut">
+    <wsdl:part name="parameters" element="tns:SauvegarderInfosPaiementResponse" />
+  </wsdl:message>
+  <wsdl:message name="InformerVendeurNouveauResultatSoapIn">
+    <wsdl:part name="parameters" element="tns:InformerVendeurNouveauResultat" />
+  </wsdl:message>
+  <wsdl:message name="InformerVendeurNouveauResultatSoapOut">
+    <wsdl:part name="parameters" element="tns:InformerVendeurNouveauResultatResponse" />
+  </wsdl:message>
+  <wsdl:message name="SauvegarderEvaluationSoapIn">
+    <wsdl:part name="parameters" element="tns:SauvegarderEvaluation" />
+  </wsdl:message>
+  <wsdl:message name="SauvegarderEvaluationSoapOut">
+    <wsdl:part name="parameters" element="tns:SauvegarderEvaluationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AffecterEvaluationAgentSoapIn">
+    <wsdl:part name="parameters" element="tns:AffecterEvaluationAgent" />
+  </wsdl:message>
+  <wsdl:message name="AffecterEvaluationAgentSoapOut">
+    <wsdl:part name="parameters" element="tns:AffecterEvaluationAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="BannirVendeurSoapIn">
+    <wsdl:part name="parameters" element="tns:BannirVendeur" />
+  </wsdl:message>
+  <wsdl:message name="BannirVendeurSoapOut">
+    <wsdl:part name="parameters" element="tns:BannirVendeurResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceEnchere_NBSoap">
+    <wsdl:operation name="SauvegarderDemandeCreationEnchere">
+      <wsdl:input message="tns:SauvegarderDemandeCreationEnchereSoapIn" />
+      <wsdl:output message="tns:SauvegarderDemandeCreationEnchereSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderEncherissement">
+      <wsdl:input message="tns:SauvegarderEncherissementSoapIn" />
+      <wsdl:output message="tns:SauvegarderEncherissementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BannirEncherisseurGagnant">
+      <wsdl:input message="tns:BannirEncherisseurGagnantSoapIn" />
+      <wsdl:output message="tns:BannirEncherisseurGagnantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderInfosPaiement">
+      <wsdl:input message="tns:SauvegarderInfosPaiementSoapIn" />
+      <wsdl:output message="tns:SauvegarderInfosPaiementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InformerVendeurNouveauResultat">
+      <wsdl:input message="tns:InformerVendeurNouveauResultatSoapIn" />
+      <wsdl:output message="tns:InformerVendeurNouveauResultatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderEvaluation">
+      <wsdl:input message="tns:SauvegarderEvaluationSoapIn" />
+      <wsdl:output message="tns:SauvegarderEvaluationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AffecterEvaluationAgent">
+      <wsdl:input message="tns:AffecterEvaluationAgentSoapIn" />
+      <wsdl:output message="tns:AffecterEvaluationAgentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BannirVendeur">
+      <wsdl:input message="tns:BannirVendeurSoapIn" />
+      <wsdl:output message="tns:BannirVendeurSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceEnchere_NBSoap" type="tns:ServiceEnchere_NBSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SauvegarderDemandeCreationEnchere">
+      <soap:operation soapAction="http://tempuri.org/SauvegarderDemandeCreationEnchere" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderEncherissement">
+      <soap:operation soapAction="http://tempuri.org/SauvegarderEncherissement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BannirEncherisseurGagnant">
+      <soap:operation soapAction="http://tempuri.org/BannirEncherisseurGagnant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderInfosPaiement">
+      <soap:operation soapAction="http://tempuri.org/SauvegarderInfosPaiement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformerVendeurNouveauResultat">
+      <soap:operation soapAction="http://tempuri.org/InformerVendeurNouveauResultat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderEvaluation">
+      <soap:operation soapAction="http://tempuri.org/SauvegarderEvaluation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AffecterEvaluationAgent">
+      <soap:operation soapAction="http://tempuri.org/AffecterEvaluationAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BannirVendeur">
+      <soap:operation soapAction="http://tempuri.org/BannirVendeur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceEnchere_NBSoap12" type="tns:ServiceEnchere_NBSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SauvegarderDemandeCreationEnchere">
+      <soap12:operation soapAction="http://tempuri.org/SauvegarderDemandeCreationEnchere" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderEncherissement">
+      <soap12:operation soapAction="http://tempuri.org/SauvegarderEncherissement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BannirEncherisseurGagnant">
+      <soap12:operation soapAction="http://tempuri.org/BannirEncherisseurGagnant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderInfosPaiement">
+      <soap12:operation soapAction="http://tempuri.org/SauvegarderInfosPaiement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InformerVendeurNouveauResultat">
+      <soap12:operation soapAction="http://tempuri.org/InformerVendeurNouveauResultat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SauvegarderEvaluation">
+      <soap12:operation soapAction="http://tempuri.org/SauvegarderEvaluation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AffecterEvaluationAgent">
+      <soap12:operation soapAction="http://tempuri.org/AffecterEvaluationAgent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BannirVendeur">
+      <soap12:operation soapAction="http://tempuri.org/BannirVendeur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceEnchere_NB">
+    <wsdl:port name="ServiceEnchere_NBSoap" binding="tns:ServiceEnchere_NBSoap">
+      <soap:address location="http://localhost:55661/ServiceEnchere_NB.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceEnchere_NBSoap12" binding="tns:ServiceEnchere_NBSoap12">
+      <soap12:address location="http://localhost:55661/ServiceEnchere_NB.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

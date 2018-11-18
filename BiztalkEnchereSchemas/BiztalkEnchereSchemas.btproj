@@ -66,6 +66,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Schema Include="DemandeCreationEnchere.xsd">
+      <TypeName>DemandeCreationEnchere</TypeName>
+      <Namespace>BiztalkEnchereSchemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>
