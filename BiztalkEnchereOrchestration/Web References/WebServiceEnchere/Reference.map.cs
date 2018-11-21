@@ -41,40 +41,42 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SauvegarderDemandeCreationEnchere", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool SauvegarderDemandeCreationEnchere([System.Xml.Serialization.XmlElementAttribute(Namespace="http://EAI.DemandeCreationEnchere")] DemandeCreationEnchere demandeCreationEnchere) {
+        public int SauvegarderDemandeCreationEnchere([System.Xml.Serialization.XmlElementAttribute(Namespace="http://BiztalkEnchere.DemandeCreationEnchere")] DemandeCreationEnchere pDemandeCreationEnchere) {
             object[] results = this.Invoke("SauvegarderDemandeCreationEnchere", new object[] {
-                        demandeCreationEnchere});
-            return ((bool)(results[0]));
+                        pDemandeCreationEnchere});
+            return ((int)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginSauvegarderDemandeCreationEnchere(DemandeCreationEnchere demandeCreationEnchere, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginSauvegarderDemandeCreationEnchere(DemandeCreationEnchere pDemandeCreationEnchere, System.AsyncCallback callback, object asyncState) {
             return this.BeginInvoke("SauvegarderDemandeCreationEnchere", new object[] {
-                        demandeCreationEnchere}, callback, asyncState);
+                        pDemandeCreationEnchere}, callback, asyncState);
         }
         
         /// <remarks/>
-        public bool EndSauvegarderDemandeCreationEnchere(System.IAsyncResult asyncResult) {
+        public int EndSauvegarderDemandeCreationEnchere(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((bool)(results[0]));
+            return ((int)(results[0]));
         }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SauvegarderEncherissement", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string SauvegarderEncherissement() {
-            object[] results = this.Invoke("SauvegarderEncherissement", new object[0]);
-            return ((string)(results[0]));
+        public bool SauvegarderEncherissement([System.Xml.Serialization.XmlElementAttribute(Namespace="http://BiztalkEnchere.Encherissement")] Encherissement pEncherissement) {
+            object[] results = this.Invoke("SauvegarderEncherissement", new object[] {
+                        pEncherissement});
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginSauvegarderEncherissement(System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("SauvegarderEncherissement", new object[0], callback, asyncState);
+        public System.IAsyncResult BeginSauvegarderEncherissement(Encherissement pEncherissement, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("SauvegarderEncherissement", new object[] {
+                        pEncherissement}, callback, asyncState);
         }
         
         /// <remarks/>
-        public string EndSauvegarderEncherissement(System.IAsyncResult asyncResult) {
+        public bool EndSauvegarderEncherissement(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((string)(results[0]));
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
@@ -109,24 +111,6 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         
         /// <remarks/>
         public string EndSauvegarderInfosPaiement(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InformerVendeurNouveauResultat", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string InformerVendeurNouveauResultat() {
-            object[] results = this.Invoke("InformerVendeurNouveauResultat", new object[0]);
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginInformerVendeurNouveauResultat(System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("InformerVendeurNouveauResultat", new object[0], callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string EndInformerVendeurNouveauResultat(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
             return ((string)(results[0]));
         }
@@ -184,6 +168,27 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
             object[] results = this.EndInvoke(asyncResult);
             return ((string)(results[0]));
         }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RecupererEncherissementGagnant", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(Namespace="http://BiztalkEnchere.Encherissement")]
+        public Encherissement RecupererEncherissementGagnant(int idEnchere) {
+            object[] results = this.Invoke("RecupererEncherissementGagnant", new object[] {
+                        idEnchere});
+            return ((Encherissement)(results[0]));
+        }
+        
+        /// <remarks/>
+        public System.IAsyncResult BeginRecupererEncherissementGagnant(int idEnchere, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("RecupererEncherissementGagnant", new object[] {
+                        idEnchere}, callback, asyncState);
+        }
+        
+        /// <remarks/>
+        public Encherissement EndRecupererEncherissementGagnant(System.IAsyncResult asyncResult) {
+            object[] results = this.EndInvoke(asyncResult);
+            return ((Encherissement)(results[0]));
+        }
     }
     
     /// <remarks/>
@@ -195,43 +200,60 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
     public partial class DemandeCreationEnchere {
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdUtilisateur_Vendeur;
+        
+        /// <remarks/>
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public string NomEnchere;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public decimal PrixMinimum;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public string OptionTransport;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public int Duree;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public string TypeEnchere;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public string Categorie;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public string MotsCles;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public string AutresInformations;
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://BiztalkEnchereSchemas.Encherissement")]
+    public partial class Encherissement {
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdUtilisateur_Encherisseur;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdEnchere;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public decimal OffreMaximale;
     }
 }

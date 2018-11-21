@@ -19,14 +19,17 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
 <xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:tns=""http://BiztalkEnchereSchemas.DemandeCreationEnchere"" elementFormDefault=""qualified"" targetNamespace=""http://BiztalkEnchereSchemas.DemandeCreationEnchere"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:element name=""DemandeCreationEnchere"" nillable=""true"" type=""tns:DemandeCreationEnchere"" />
   <xs:complexType name=""DemandeCreationEnchere"">
-    <xs:attribute name=""NomEnchere"" type=""xs:string"" />
-    <xs:attribute name=""PrixMinimum"" type=""xs:decimal"" use=""required"" />
-    <xs:attribute name=""OptionTransport"" type=""xs:string"" />
-    <xs:attribute name=""Duree"" type=""xs:int"" use=""required"" />
-    <xs:attribute name=""TypeEnchere"" type=""xs:string"" />
-    <xs:attribute name=""Categorie"" type=""xs:string"" />
-    <xs:attribute name=""MotsCles"" type=""xs:string"" />
-    <xs:attribute name=""AutresInformations"" type=""xs:string"" />
+    <xs:sequence>
+      <xs:element minOccurs=""1"" maxOccurs=""1"" name=""IdUtilisateur_Vendeur"" type=""xs:int"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""NomEnchere"" type=""xs:string"" />
+      <xs:element minOccurs=""1"" maxOccurs=""1"" name=""PrixMinimum"" type=""xs:decimal"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""OptionTransport"" type=""xs:string"" />
+      <xs:element minOccurs=""1"" maxOccurs=""1"" name=""Duree"" type=""xs:int"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""TypeEnchere"" type=""xs:string"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""Categorie"" type=""xs:string"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""MotsCles"" type=""xs:string"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""AutresInformations"" type=""xs:string"" />
+    </xs:sequence>
   </xs:complexType>
 </xs:schema>";
         

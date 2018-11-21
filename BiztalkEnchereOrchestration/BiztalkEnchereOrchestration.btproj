@@ -105,6 +105,12 @@
       <Namespace>BiztalkEnchereOrchestration.WebServiceEnchere</Namespace>
       <SubType>Task</SubType>
     </Schema>
+    <Schema Include="Web References\WebServiceEnchere\Reference1.xsd">
+      <DependentUpon>Reference.map</DependentUpon>
+      <TypeName>Reference1</TypeName>
+      <Namespace>BiztalkEnchereOrchestration.WebServiceEnchere</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="Web References\WebServiceEnchere\ServiceEnchere_NB.wsdl" />
   </ItemGroup>
   <ItemGroup>
