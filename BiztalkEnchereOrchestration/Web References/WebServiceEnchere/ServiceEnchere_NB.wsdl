@@ -91,32 +91,39 @@
         </s:complexType>
       </s:element>
       <s:element name="SauvegarderEvaluation">
-        <s:complexType />
-      </s:element>
-      <s:element name="SauvegarderEvaluationResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SauvegarderEvaluationResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEvaluation" type="tns:BO_Evaluation" />
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="AffecterEvaluationAgent">
-        <s:complexType />
-      </s:element>
-      <s:element name="AffecterEvaluationAgentResponse">
+      <s:complexType name="BO_Evaluation">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdUtilisateur" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EvaluationGlobale" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FonctionnementProduit" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SauvegarderEvaluationResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="AffecterEvaluationAgentResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SauvegarderEvaluationResult" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
       <s:element name="BannirVendeur">
-        <s:complexType />
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pIdUtilisateur_Vendeur" type="s:int" />
+          </s:sequence>
+        </s:complexType>
       </s:element>
       <s:element name="BannirVendeurResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="BannirVendeurResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BannirVendeurResult" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -180,12 +187,6 @@
   <wsdl:message name="SauvegarderEvaluationSoapOut">
     <wsdl:part name="parameters" element="tns:SauvegarderEvaluationResponse" />
   </wsdl:message>
-  <wsdl:message name="AffecterEvaluationAgentSoapIn">
-    <wsdl:part name="parameters" element="tns:AffecterEvaluationAgent" />
-  </wsdl:message>
-  <wsdl:message name="AffecterEvaluationAgentSoapOut">
-    <wsdl:part name="parameters" element="tns:AffecterEvaluationAgentResponse" />
-  </wsdl:message>
   <wsdl:message name="BannirVendeurSoapIn">
     <wsdl:part name="parameters" element="tns:BannirVendeur" />
   </wsdl:message>
@@ -218,10 +219,6 @@
     <wsdl:operation name="SauvegarderEvaluation">
       <wsdl:input message="tns:SauvegarderEvaluationSoapIn" />
       <wsdl:output message="tns:SauvegarderEvaluationSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="AffecterEvaluationAgent">
-      <wsdl:input message="tns:AffecterEvaluationAgentSoapIn" />
-      <wsdl:output message="tns:AffecterEvaluationAgentSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="BannirVendeur">
       <wsdl:input message="tns:BannirVendeurSoapIn" />
@@ -272,15 +269,6 @@
     </wsdl:operation>
     <wsdl:operation name="SauvegarderEvaluation">
       <soap:operation soapAction="http://tempuri.org/SauvegarderEvaluation" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AffecterEvaluationAgent">
-      <soap:operation soapAction="http://tempuri.org/AffecterEvaluationAgent" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -347,15 +335,6 @@
     </wsdl:operation>
     <wsdl:operation name="SauvegarderEvaluation">
       <soap12:operation soapAction="http://tempuri.org/SauvegarderEvaluation" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AffecterEvaluationAgent">
-      <soap12:operation soapAction="http://tempuri.org/AffecterEvaluationAgent" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

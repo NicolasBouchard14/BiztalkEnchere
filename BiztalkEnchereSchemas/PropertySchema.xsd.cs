@@ -7,7 +7,7 @@ namespace BiztalkEnchereSchemas.PropertySchema {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Property)]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"EnchereTerminee", @"Duree", @"IdEnchere"})]
+    [SchemaRoots(new string[] {@"Duree", @"Message", @"NomEnchere", @"EvaluationGlobale", @"Approuvee"})]
     public sealed class PropertySchema : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -21,13 +21,6 @@ namespace BiztalkEnchereSchemas.PropertySchema {
       <b:schemaInfo schema_type=""property"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" />
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name=""EnchereTerminee"" type=""xs:boolean"">
-    <xs:annotation>
-      <xs:appinfo>
-        <b:fieldInfo propertyGuid=""5985820c-307e-49f3-a6c7-ec45c5dcf2c6"" />
-      </xs:appinfo>
-    </xs:annotation>
-  </xs:element>
   <xs:element name=""Duree"" type=""xs:int"">
     <xs:annotation>
       <xs:appinfo>
@@ -35,10 +28,31 @@ namespace BiztalkEnchereSchemas.PropertySchema {
       </xs:appinfo>
     </xs:annotation>
   </xs:element>
-  <xs:element name=""IdEnchere"" type=""xs:int"">
+  <xs:element name=""Message"" type=""xs:string"">
     <xs:annotation>
       <xs:appinfo>
-        <b:fieldInfo propertyGuid=""d82e2af4-da56-4280-ade5-35976f413d65"" />
+        <b:fieldInfo propertyGuid=""eb9a832d-955a-4799-845a-6be835a2445a"" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name=""NomEnchere"" type=""xs:string"">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid=""59360a0d-5970-466b-9336-0f52eacd19d9"" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name=""EvaluationGlobale"" type=""xs:boolean"">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid=""77e8d1b8-b018-4fee-ac8a-0b2d1c7251b4"" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name=""Approuvee"" type=""xs:boolean"">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid=""a899abc2-22b4-48f7-9405-bbb7a129fbde"" />
       </xs:appinfo>
     </xs:annotation>
   </xs:element>
@@ -55,10 +69,12 @@ namespace BiztalkEnchereSchemas.PropertySchema {
         
         public override string[] RootNodes {
             get {
-                string[] _RootElements = new string [3];
-                _RootElements[0] = "EnchereTerminee";
-                _RootElements[1] = "Duree";
-                _RootElements[2] = "IdEnchere";
+                string[] _RootElements = new string [5];
+                _RootElements[0] = "Duree";
+                _RootElements[1] = "Message";
+                _RootElements[2] = "NomEnchere";
+                _RootElements[3] = "EvaluationGlobale";
+                _RootElements[4] = "Approuvee";
                 return _RootElements;
             }
         }
@@ -69,36 +85,6 @@ namespace BiztalkEnchereSchemas.PropertySchema {
             }
             set {
                 _rawSchema = value;
-            }
-        }
-    }
-    
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [System.SerializableAttribute()]
-    [PropertyType(@"EnchereTerminee",@"https://BiztalkEnchereSchemas.PropertySchema","boolean","System.Boolean")]
-    [PropertyGuidAttribute(@"5985820c-307e-49f3-a6c7-ec45c5dcf2c6")]
-    public sealed class EnchereTerminee : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
-        
-        [System.NonSerializedAttribute()]
-        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"EnchereTerminee", @"https://BiztalkEnchereSchemas.PropertySchema");
-        
-        private static bool PropertyValueType {
-            get {
-                throw new System.NotSupportedException();
-            }
-        }
-        
-        public override System.Xml.XmlQualifiedName Name {
-            get {
-                return _QName;
-            }
-        }
-        
-        public override System.Type Type {
-            get {
-                return typeof(bool);
             }
         }
     }
@@ -137,14 +123,14 @@ namespace BiztalkEnchereSchemas.PropertySchema {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [System.SerializableAttribute()]
-    [PropertyType(@"IdEnchere",@"https://BiztalkEnchereSchemas.PropertySchema","int","System.Int32")]
-    [PropertyGuidAttribute(@"d82e2af4-da56-4280-ade5-35976f413d65")]
-    public sealed class IdEnchere : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+    [PropertyType(@"Message",@"https://BiztalkEnchereSchemas.PropertySchema","string","System.String")]
+    [PropertyGuidAttribute(@"eb9a832d-955a-4799-845a-6be835a2445a")]
+    public sealed class Message : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
         
         [System.NonSerializedAttribute()]
-        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"IdEnchere", @"https://BiztalkEnchereSchemas.PropertySchema");
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"Message", @"https://BiztalkEnchereSchemas.PropertySchema");
         
-        private static int PropertyValueType {
+        private static string PropertyValueType {
             get {
                 throw new System.NotSupportedException();
             }
@@ -158,7 +144,97 @@ namespace BiztalkEnchereSchemas.PropertySchema {
         
         public override System.Type Type {
             get {
-                return typeof(int);
+                return typeof(string);
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [System.SerializableAttribute()]
+    [PropertyType(@"NomEnchere",@"https://BiztalkEnchereSchemas.PropertySchema","string","System.String")]
+    [PropertyGuidAttribute(@"59360a0d-5970-466b-9336-0f52eacd19d9")]
+    public sealed class NomEnchere : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+        
+        [System.NonSerializedAttribute()]
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"NomEnchere", @"https://BiztalkEnchereSchemas.PropertySchema");
+        
+        private static string PropertyValueType {
+            get {
+                throw new System.NotSupportedException();
+            }
+        }
+        
+        public override System.Xml.XmlQualifiedName Name {
+            get {
+                return _QName;
+            }
+        }
+        
+        public override System.Type Type {
+            get {
+                return typeof(string);
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [System.SerializableAttribute()]
+    [PropertyType(@"EvaluationGlobale",@"https://BiztalkEnchereSchemas.PropertySchema","boolean","System.Boolean")]
+    [PropertyGuidAttribute(@"77e8d1b8-b018-4fee-ac8a-0b2d1c7251b4")]
+    public sealed class EvaluationGlobale : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+        
+        [System.NonSerializedAttribute()]
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"EvaluationGlobale", @"https://BiztalkEnchereSchemas.PropertySchema");
+        
+        private static bool PropertyValueType {
+            get {
+                throw new System.NotSupportedException();
+            }
+        }
+        
+        public override System.Xml.XmlQualifiedName Name {
+            get {
+                return _QName;
+            }
+        }
+        
+        public override System.Type Type {
+            get {
+                return typeof(bool);
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [System.SerializableAttribute()]
+    [PropertyType(@"Approuvee",@"https://BiztalkEnchereSchemas.PropertySchema","boolean","System.Boolean")]
+    [PropertyGuidAttribute(@"a899abc2-22b4-48f7-9405-bbb7a129fbde")]
+    public sealed class Approuvee : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+        
+        [System.NonSerializedAttribute()]
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"Approuvee", @"https://BiztalkEnchereSchemas.PropertySchema");
+        
+        private static bool PropertyValueType {
+            get {
+                throw new System.NotSupportedException();
+            }
+        }
+        
+        public override System.Xml.XmlQualifiedName Name {
+            get {
+                return _QName;
+            }
+        }
+        
+        public override System.Type Type {
+            get {
+                return typeof(bool);
             }
         }
     }

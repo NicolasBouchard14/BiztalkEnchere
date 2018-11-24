@@ -171,6 +171,20 @@
       <SubType>Task</SubType>
     </Map>
   </ItemGroup>
+  <ItemGroup>
+    <Map Include="Mapper\MapEvaluationTransactionToSauvegarderEvaluationRequest.btm">
+      <TypeName>MapEvaluationTransactionToSauvegarderEvaluationRequest</TypeName>
+      <Namespace>BiztalkEnchereOrchestration.Mapper</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Mapper\MapEncherissementGagnantToCourrielUtilisateurBanni.btm">
+      <TypeName>MapEncherissementGagnantToCourrielUtilisateurBanni</TypeName>
+      <Namespace>BiztalkEnchereOrchestration.Mapper</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>

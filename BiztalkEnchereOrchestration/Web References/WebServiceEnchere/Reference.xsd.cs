@@ -7,7 +7,7 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"BO_DemandeCreationEnchere", @"BO_Utilisateur", @"BO_EncherissementGagnant", @"BO_Encherissement", @"BO_Paiement", @"BO_Enchere"})]
+    [SchemaRoots(new string[] {@"BO_DemandeCreationEnchere", @"BO_Utilisateur", @"BO_EncherissementGagnant", @"BO_Encherissement", @"BO_Evaluation", @"BO_Paiement", @"BO_Enchere"})]
     public sealed class Reference : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -54,6 +54,16 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
     </xs:sequence>
   </xs:complexType>
   <xs:element name=""BO_Encherissement"" nillable=""true"" type=""tns:BO_Encherissement"" />
+  <xs:element name=""BO_Evaluation"" nillable=""true"" type=""tns:BO_Evaluation"" />
+  <xs:complexType name=""BO_Evaluation"">
+    <xs:sequence>
+      <xs:element minOccurs=""1"" maxOccurs=""1"" name=""IdEnchere"" type=""xs:int"" />
+      <xs:element minOccurs=""1"" maxOccurs=""1"" name=""IdUtilisateur"" type=""xs:int"" />
+      <xs:element minOccurs=""1"" maxOccurs=""1"" name=""EvaluationGlobale"" type=""xs:boolean"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""Message"" type=""xs:string"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""FonctionnementProduit"" type=""xs:string"" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:element name=""BO_Paiement"" nillable=""true"" type=""tns:BO_Paiement"" />
   <xs:complexType name=""BO_Paiement"">
     <xs:sequence>
@@ -81,13 +91,14 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         
         public override string[] RootNodes {
             get {
-                string[] _RootElements = new string [6];
+                string[] _RootElements = new string [7];
                 _RootElements[0] = "BO_DemandeCreationEnchere";
                 _RootElements[1] = "BO_Utilisateur";
                 _RootElements[2] = "BO_EncherissementGagnant";
                 _RootElements[3] = "BO_Encherissement";
-                _RootElements[4] = "BO_Paiement";
-                _RootElements[5] = "BO_Enchere";
+                _RootElements[4] = "BO_Evaluation";
+                _RootElements[5] = "BO_Paiement";
+                _RootElements[6] = "BO_Enchere";
                 return _RootElements;
             }
         }
@@ -227,6 +238,41 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
                 get {
                     string[] _RootElements = new string [1];
                     _RootElements[0] = "BO_Encherissement";
+                    return _RootElements;
+                }
+            }
+            
+            protected override object RawSchema {
+                get {
+                    return _rawSchema;
+                }
+                set {
+                    _rawSchema = value;
+                }
+            }
+        }
+        
+        [Schema(@"http://tempuri.org/",@"BO_Evaluation")]
+        [System.SerializableAttribute()]
+        [SchemaRoots(new string[] {@"BO_Evaluation"})]
+        public sealed class BO_Evaluation : Microsoft.XLANGs.BaseTypes.SchemaBase {
+            
+            [System.NonSerializedAttribute()]
+            private static object _rawSchema;
+            
+            public BO_Evaluation() {
+            }
+            
+            public override string XmlContent {
+                get {
+                    return _strSchema;
+                }
+            }
+            
+            public override string[] RootNodes {
+                get {
+                    string[] _RootElements = new string [1];
+                    _RootElements[0] = "BO_Evaluation";
                     return _RootElements;
                 }
             }

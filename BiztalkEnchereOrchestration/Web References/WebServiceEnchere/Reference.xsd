@@ -38,6 +38,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="BO_Encherissement" nillable="true" type="tns:BO_Encherissement" />
+  <xs:element name="BO_Evaluation" nillable="true" type="tns:BO_Evaluation" />
+  <xs:complexType name="BO_Evaluation">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IdUtilisateur" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EvaluationGlobale" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Message" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FonctionnementProduit" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:element name="BO_Paiement" nillable="true" type="tns:BO_Paiement" />
   <xs:complexType name="BO_Paiement">
     <xs:sequence>

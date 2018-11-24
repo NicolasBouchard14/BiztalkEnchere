@@ -121,56 +121,42 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SauvegarderEvaluation", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string SauvegarderEvaluation() {
-            object[] results = this.Invoke("SauvegarderEvaluation", new object[0]);
-            return ((string)(results[0]));
+        public bool SauvegarderEvaluation(BO_Evaluation pEvaluation) {
+            object[] results = this.Invoke("SauvegarderEvaluation", new object[] {
+                        pEvaluation});
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginSauvegarderEvaluation(System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("SauvegarderEvaluation", new object[0], callback, asyncState);
+        public System.IAsyncResult BeginSauvegarderEvaluation(BO_Evaluation pEvaluation, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("SauvegarderEvaluation", new object[] {
+                        pEvaluation}, callback, asyncState);
         }
         
         /// <remarks/>
-        public string EndSauvegarderEvaluation(System.IAsyncResult asyncResult) {
+        public bool EndSauvegarderEvaluation(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AffecterEvaluationAgent", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string AffecterEvaluationAgent() {
-            object[] results = this.Invoke("AffecterEvaluationAgent", new object[0]);
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public System.IAsyncResult BeginAffecterEvaluationAgent(System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("AffecterEvaluationAgent", new object[0], callback, asyncState);
-        }
-        
-        /// <remarks/>
-        public string EndAffecterEvaluationAgent(System.IAsyncResult asyncResult) {
-            object[] results = this.EndInvoke(asyncResult);
-            return ((string)(results[0]));
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BannirVendeur", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string BannirVendeur() {
-            object[] results = this.Invoke("BannirVendeur", new object[0]);
-            return ((string)(results[0]));
+        public bool BannirVendeur(int pIdUtilisateur_Vendeur) {
+            object[] results = this.Invoke("BannirVendeur", new object[] {
+                        pIdUtilisateur_Vendeur});
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginBannirVendeur(System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("BannirVendeur", new object[0], callback, asyncState);
+        public System.IAsyncResult BeginBannirVendeur(int pIdUtilisateur_Vendeur, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("BannirVendeur", new object[] {
+                        pIdUtilisateur_Vendeur}, callback, asyncState);
         }
         
         /// <remarks/>
-        public string EndBannirVendeur(System.IAsyncResult asyncResult) {
+        public bool EndBannirVendeur(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((string)(results[0]));
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
@@ -297,6 +283,35 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         /// <remarks/>
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public decimal OffreMaximale;
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BO_Evaluation {
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdEnchere;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdUtilisateur;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public bool EvaluationGlobale;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public string Message;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public string FonctionnementProduit;
     }
     
     /// <remarks/>

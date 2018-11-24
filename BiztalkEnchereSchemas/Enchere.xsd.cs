@@ -10,6 +10,7 @@ namespace BiztalkEnchereSchemas {
     [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.PropertySchema.Duree), XPath = @"/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='Duree' and namespace-uri()='']", XsdType = @"int")]
     [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdUtilisateur_Vendeur), XPath = @"/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='IdUtilisateur_Vendeur' and namespace-uri()='']", XsdType = @"int")]
     [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdEnchere), XPath = @"/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='IdEnchere' and namespace-uri()='']", XsdType = @"int")]
+    [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.PropertySchema.NomEnchere), XPath = @"/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='NomEnchere' and namespace-uri()='']", XsdType = @"string")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"Enchere"})]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"BiztalkEnchereSchemas.CorrelationSchema", typeof(global::BiztalkEnchereSchemas.CorrelationSchema))]
@@ -37,6 +38,7 @@ namespace BiztalkEnchereSchemas {
           <b:property name=""ns0:Duree"" xpath=""/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='Duree' and namespace-uri()='']"" />
           <b:property name=""ns1:CommonIdUtilisateur_Vendeur"" xpath=""/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='IdUtilisateur_Vendeur' and namespace-uri()='']"" />
           <b:property name=""ns1:CommonIdEnchere"" xpath=""/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='IdEnchere' and namespace-uri()='']"" />
+          <b:property name=""ns0:NomEnchere"" xpath=""/*[local-name()='Enchere' and namespace-uri()='http://BiztalkEnchereSchemas.DemandeCreationEnchere']/*[local-name()='NomEnchere' and namespace-uri()='']"" />
         </b:properties>
       </xs:appinfo>
     </xs:annotation>
