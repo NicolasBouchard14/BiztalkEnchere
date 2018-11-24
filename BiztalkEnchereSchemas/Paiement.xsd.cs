@@ -6,19 +6,19 @@ namespace BiztalkEnchereSchemas {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
-    [Schema(@"http://BiztalkEnchereSchemas.Encherissement",@"Encherissement")]
-    [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdEnchere), XPath = @"/*[local-name()='Encherissement' and namespace-uri()='http://BiztalkEnchereSchemas.Encherissement']/*[local-name()='IdEnchere' and namespace-uri()='']", XsdType = @"int")]
+    [Schema(@"http://BiztalkEnchereSchemas.Paiement",@"Paiement")]
+    [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdEnchere), XPath = @"/*[local-name()='Paiement' and namespace-uri()='http://BiztalkEnchereSchemas.Paiement']/*[local-name()='IdEnchere' and namespace-uri()='']", XsdType = @"int")]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"Encherissement"})]
+    [SchemaRoots(new string[] {@"Paiement"})]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"BiztalkEnchereSchemas.CorrelationSchema", typeof(global::BiztalkEnchereSchemas.CorrelationSchema))]
-    public sealed class Encherissement : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class Paiement : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns=""http://BiztalkEnchereSchemas.Encherissement"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ns0=""https://BiztalkEnchereSchemas.CorrelationSchema"" targetNamespace=""http://BiztalkEnchereSchemas.Encherissement"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns=""http://BiztalkEnchereSchemas.Paiement"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ns0=""https://BiztalkEnchereSchemas.CorrelationSchema"" targetNamespace=""http://BiztalkEnchereSchemas.Paiement"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:annotation>
     <xs:appinfo>
       <b:imports>
@@ -26,29 +26,24 @@ namespace BiztalkEnchereSchemas {
       </b:imports>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name=""Encherissement"">
+  <xs:element name=""Paiement"">
     <xs:annotation>
       <xs:appinfo>
         <b:properties>
-          <b:property name=""ns0:CommonIdEnchere"" xpath=""/*[local-name()='Encherissement' and namespace-uri()='http://BiztalkEnchereSchemas.Encherissement']/*[local-name()='IdEnchere' and namespace-uri()='']"" />
+          <b:property name=""ns0:CommonIdEnchere"" xpath=""/*[local-name()='Paiement' and namespace-uri()='http://BiztalkEnchereSchemas.Paiement']/*[local-name()='IdEnchere' and namespace-uri()='']"" />
         </b:properties>
       </xs:appinfo>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element name=""IdUtilisateur_Encherisseur"" type=""xs:int"" />
         <xs:element name=""IdEnchere"" type=""xs:int"" />
-        <xs:element name=""OffreMaximale"">
-          <xs:simpleType>
-            <xs:restriction base=""xs:decimal"" />
-          </xs:simpleType>
-        </xs:element>
+        <xs:element name=""InfosPaiement"" type=""xs:string"" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>";
         
-        public Encherissement() {
+        public Paiement() {
         }
         
         public override string XmlContent {
@@ -60,7 +55,7 @@ namespace BiztalkEnchereSchemas {
         public override string[] RootNodes {
             get {
                 string[] _RootElements = new string [1];
-                _RootElements[0] = "Encherissement";
+                _RootElements[0] = "Paiement";
                 return _RootElements;
             }
         }

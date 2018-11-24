@@ -1,30 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s4="http://BiztalkEnchereSchemas.Encherissement" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://BiztalkEnchere.DemandeCreationEnchere" xmlns:s2="http://BiztalkEnchereSchemas.DemandeCreationEnchere" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s3="http://BiztalkEnchere.Encherissement" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
-      <s:import namespace="http://BiztalkEnchere.DemandeCreationEnchere" />
-      <s:import namespace="http://BiztalkEnchere.Encherissement" />
       <s:element name="SauvegarderDemandeCreationEnchere">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" ref="s1:pDemandeCreationEnchere" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDemandeCreationEnchere" type="tns:BO_DemandeCreationEnchere" />
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:complexType name="BO_DemandeCreationEnchere">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdUtilisateur_Vendeur" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomEnchere" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrixMinimum" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="OptionTransport" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Duree" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeEnchere" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Categorie" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MotsCles" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AutresInformations" type="s:string" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="SauvegarderDemandeCreationEnchereResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="SauvegarderDemandeCreationEnchereResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SauvegarderDemandeCreationEnchereResult" type="tns:BO_Enchere" />
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:complexType name="BO_Enchere">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DemandeCreationEnchere" type="tns:BO_DemandeCreationEnchere" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="SauvegarderEncherissement">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" ref="s3:pEncherissement" />
+            <s:element minOccurs="0" maxOccurs="1" name="pEncherissement" type="tns:BO_Encherissement" />
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:complexType name="BO_Encherissement">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdUtilisateur_Encherisseur" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OffreMaximale" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="SauvegarderEncherissementResponse">
         <s:complexType>
           <s:sequence>
@@ -33,22 +57,36 @@
         </s:complexType>
       </s:element>
       <s:element name="BannirEncherisseurGagnant">
-        <s:complexType />
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pIdUtilisateur_EncherisseurGagnant" type="s:int" />
+          </s:sequence>
+        </s:complexType>
       </s:element>
       <s:element name="BannirEncherisseurGagnantResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="BannirEncherisseurGagnantResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BannirEncherisseurGagnantResult" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
       <s:element name="SauvegarderInfosPaiement">
-        <s:complexType />
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaiement" type="tns:BO_Paiement" />
+          </s:sequence>
+        </s:complexType>
       </s:element>
+      <s:complexType name="BO_Paiement">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="InfosPaiement" type="s:string" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="SauvegarderInfosPaiementResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="SauvegarderInfosPaiementResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SauvegarderInfosPaiementResult" type="s:boolean" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -92,41 +130,22 @@
       <s:element name="RecupererEncherissementGagnantResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" ref="s3:RecupererEncherissementGagnantResult" />
+            <s:element minOccurs="0" maxOccurs="1" name="RecupererEncherissementGagnantResult" type="tns:BO_EncherissementGagnant" />
           </s:sequence>
         </s:complexType>
       </s:element>
-    </s:schema>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://BiztalkEnchere.DemandeCreationEnchere">
-      <s:import namespace="http://BiztalkEnchereSchemas.DemandeCreationEnchere" />
-      <s:element name="pDemandeCreationEnchere" type="s2:DemandeCreationEnchere" />
-    </s:schema>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://BiztalkEnchereSchemas.DemandeCreationEnchere">
-      <s:complexType name="DemandeCreationEnchere">
+      <s:complexType name="BO_EncherissementGagnant">
         <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="IdUtilisateur_Vendeur" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="NomEnchere" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="PrixMinimum" type="s:decimal" />
-          <s:element minOccurs="0" maxOccurs="1" name="OptionTransport" type="s:string" />
-          <s:element minOccurs="1" maxOccurs="1" name="Duree" type="s:int" />
-          <s:element minOccurs="0" maxOccurs="1" name="TypeEnchere" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="Categorie" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="MotsCles" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="AutresInformations" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Encherissement" type="tns:BO_Encherissement" />
+          <s:element minOccurs="0" maxOccurs="1" name="Utilisateur_Vendeur" type="tns:BO_Utilisateur" />
+          <s:element minOccurs="0" maxOccurs="1" name="Utilisateur_EncherisseurGagnant" type="tns:BO_Utilisateur" />
         </s:sequence>
       </s:complexType>
-    </s:schema>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://BiztalkEnchere.Encherissement">
-      <s:import namespace="http://BiztalkEnchereSchemas.Encherissement" />
-      <s:element name="pEncherissement" type="s4:Encherissement" />
-      <s:element name="RecupererEncherissementGagnantResult" type="s4:Encherissement" />
-    </s:schema>
-    <s:schema elementFormDefault="qualified" targetNamespace="http://BiztalkEnchereSchemas.Encherissement">
-      <s:complexType name="Encherissement">
+      <s:complexType name="BO_Utilisateur">
         <s:sequence>
-          <s:element minOccurs="1" maxOccurs="1" name="IdUtilisateur_Encherisseur" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="OffreMaximale" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdUtilisateur" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomUtilisateur" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Courriel" type="s:string" />
         </s:sequence>
       </s:complexType>
     </s:schema>

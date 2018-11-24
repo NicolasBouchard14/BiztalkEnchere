@@ -41,34 +41,34 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SauvegarderDemandeCreationEnchere", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int SauvegarderDemandeCreationEnchere([System.Xml.Serialization.XmlElementAttribute(Namespace="http://BiztalkEnchere.DemandeCreationEnchere")] DemandeCreationEnchere pDemandeCreationEnchere) {
+        public BO_Enchere SauvegarderDemandeCreationEnchere(BO_DemandeCreationEnchere pDemandeCreationEnchere) {
             object[] results = this.Invoke("SauvegarderDemandeCreationEnchere", new object[] {
                         pDemandeCreationEnchere});
-            return ((int)(results[0]));
+            return ((BO_Enchere)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginSauvegarderDemandeCreationEnchere(DemandeCreationEnchere pDemandeCreationEnchere, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginSauvegarderDemandeCreationEnchere(BO_DemandeCreationEnchere pDemandeCreationEnchere, System.AsyncCallback callback, object asyncState) {
             return this.BeginInvoke("SauvegarderDemandeCreationEnchere", new object[] {
                         pDemandeCreationEnchere}, callback, asyncState);
         }
         
         /// <remarks/>
-        public int EndSauvegarderDemandeCreationEnchere(System.IAsyncResult asyncResult) {
+        public BO_Enchere EndSauvegarderDemandeCreationEnchere(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((int)(results[0]));
+            return ((BO_Enchere)(results[0]));
         }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SauvegarderEncherissement", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public bool SauvegarderEncherissement([System.Xml.Serialization.XmlElementAttribute(Namespace="http://BiztalkEnchere.Encherissement")] Encherissement pEncherissement) {
+        public bool SauvegarderEncherissement(BO_Encherissement pEncherissement) {
             object[] results = this.Invoke("SauvegarderEncherissement", new object[] {
                         pEncherissement});
             return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginSauvegarderEncherissement(Encherissement pEncherissement, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginSauvegarderEncherissement(BO_Encherissement pEncherissement, System.AsyncCallback callback, object asyncState) {
             return this.BeginInvoke("SauvegarderEncherissement", new object[] {
                         pEncherissement}, callback, asyncState);
         }
@@ -81,38 +81,42 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BannirEncherisseurGagnant", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string BannirEncherisseurGagnant() {
-            object[] results = this.Invoke("BannirEncherisseurGagnant", new object[0]);
-            return ((string)(results[0]));
+        public bool BannirEncherisseurGagnant(int pIdUtilisateur_EncherisseurGagnant) {
+            object[] results = this.Invoke("BannirEncherisseurGagnant", new object[] {
+                        pIdUtilisateur_EncherisseurGagnant});
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginBannirEncherisseurGagnant(System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("BannirEncherisseurGagnant", new object[0], callback, asyncState);
+        public System.IAsyncResult BeginBannirEncherisseurGagnant(int pIdUtilisateur_EncherisseurGagnant, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("BannirEncherisseurGagnant", new object[] {
+                        pIdUtilisateur_EncherisseurGagnant}, callback, asyncState);
         }
         
         /// <remarks/>
-        public string EndBannirEncherisseurGagnant(System.IAsyncResult asyncResult) {
+        public bool EndBannirEncherisseurGagnant(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((string)(results[0]));
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SauvegarderInfosPaiement", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public string SauvegarderInfosPaiement() {
-            object[] results = this.Invoke("SauvegarderInfosPaiement", new object[0]);
-            return ((string)(results[0]));
+        public bool SauvegarderInfosPaiement(BO_Paiement pPaiement) {
+            object[] results = this.Invoke("SauvegarderInfosPaiement", new object[] {
+                        pPaiement});
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
-        public System.IAsyncResult BeginSauvegarderInfosPaiement(System.AsyncCallback callback, object asyncState) {
-            return this.BeginInvoke("SauvegarderInfosPaiement", new object[0], callback, asyncState);
+        public System.IAsyncResult BeginSauvegarderInfosPaiement(BO_Paiement pPaiement, System.AsyncCallback callback, object asyncState) {
+            return this.BeginInvoke("SauvegarderInfosPaiement", new object[] {
+                        pPaiement}, callback, asyncState);
         }
         
         /// <remarks/>
-        public string EndSauvegarderInfosPaiement(System.IAsyncResult asyncResult) {
+        public bool EndSauvegarderInfosPaiement(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((string)(results[0]));
+            return ((bool)(results[0]));
         }
         
         /// <remarks/>
@@ -171,11 +175,10 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/RecupererEncherissementGagnant", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        [return: System.Xml.Serialization.XmlElementAttribute(Namespace="http://BiztalkEnchere.Encherissement")]
-        public Encherissement RecupererEncherissementGagnant(int idEnchere) {
+        public BO_EncherissementGagnant RecupererEncherissementGagnant(int idEnchere) {
             object[] results = this.Invoke("RecupererEncherissementGagnant", new object[] {
                         idEnchere});
-            return ((Encherissement)(results[0]));
+            return ((BO_EncherissementGagnant)(results[0]));
         }
         
         /// <remarks/>
@@ -185,9 +188,9 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         }
         
         /// <remarks/>
-        public Encherissement EndRecupererEncherissementGagnant(System.IAsyncResult asyncResult) {
+        public BO_EncherissementGagnant EndRecupererEncherissementGagnant(System.IAsyncResult asyncResult) {
             object[] results = this.EndInvoke(asyncResult);
-            return ((Encherissement)(results[0]));
+            return ((BO_EncherissementGagnant)(results[0]));
         }
     }
     
@@ -196,8 +199,8 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://BiztalkEnchereSchemas.DemandeCreationEnchere")]
-    public partial class DemandeCreationEnchere {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BO_DemandeCreationEnchere {
         
         /// <remarks/>
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
@@ -241,8 +244,47 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://BiztalkEnchereSchemas.Encherissement")]
-    public partial class Encherissement {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BO_Utilisateur {
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdUtilisateur;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public string NomUtilisateur;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public string Courriel;
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BO_EncherissementGagnant {
+        
+        /// <remarks/>
+        public BO_Encherissement Encherissement;
+        
+        /// <remarks/>
+        public BO_Utilisateur Utilisateur_Vendeur;
+        
+        /// <remarks/>
+        public BO_Utilisateur Utilisateur_EncherisseurGagnant;
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BO_Encherissement {
         
         /// <remarks/>
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
@@ -255,5 +297,38 @@ namespace BiztalkEnchereOrchestration.WebServiceEnchere {
         /// <remarks/>
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
         public decimal OffreMaximale;
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BO_Paiement {
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdEnchere;
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public string InfosPaiement;
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class BO_Enchere {
+        
+        /// <remarks/>
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute()]
+        public int IdEnchere;
+        
+        /// <remarks/>
+        public BO_DemandeCreationEnchere DemandeCreationEnchere;
     }
 }

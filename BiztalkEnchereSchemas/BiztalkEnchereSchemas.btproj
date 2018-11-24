@@ -81,6 +81,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BizTalkEnchere.snk" />
+    <Schema Include="Paiement.xsd">
+      <TypeName>Paiement</TypeName>
+      <Namespace>BiztalkEnchereSchemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="EncherissementGagnant.xsd">
+      <TypeName>EncherissementGagnant</TypeName>
+      <Namespace>BiztalkEnchereSchemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="Enchere.xsd">
       <SubType>Task</SubType>
       <TypeName>Enchere</TypeName>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:tns="http://BiztalkEnchereSchemas.DemandeCreationEnchere" elementFormDefault="qualified" targetNamespace="http://BiztalkEnchereSchemas.DemandeCreationEnchere" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="DemandeCreationEnchere" nillable="true" type="tns:DemandeCreationEnchere" />
-  <xs:complexType name="DemandeCreationEnchere">
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BO_DemandeCreationEnchere" nillable="true" type="tns:BO_DemandeCreationEnchere" />
+  <xs:complexType name="BO_DemandeCreationEnchere">
     <xs:sequence>
       <xs:element minOccurs="1" maxOccurs="1" name="IdUtilisateur_Vendeur" type="xs:int" />
       <xs:element minOccurs="0" maxOccurs="1" name="NomEnchere" type="xs:string" />
@@ -12,6 +12,44 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Categorie" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="MotsCles" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="AutresInformations" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BO_Utilisateur" nillable="true" type="tns:BO_Utilisateur" />
+  <xs:complexType name="BO_Utilisateur">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="IdUtilisateur" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NomUtilisateur" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Courriel" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BO_EncherissementGagnant" nillable="true" type="tns:BO_EncherissementGagnant" />
+  <xs:complexType name="BO_EncherissementGagnant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Encherissement" type="tns:BO_Encherissement" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Utilisateur_Vendeur" type="tns:BO_Utilisateur" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Utilisateur_EncherisseurGagnant" type="tns:BO_Utilisateur" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BO_Encherissement">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="IdUtilisateur_Encherisseur" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="OffreMaximale" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BO_Encherissement" nillable="true" type="tns:BO_Encherissement" />
+  <xs:element name="BO_Paiement" nillable="true" type="tns:BO_Paiement" />
+  <xs:complexType name="BO_Paiement">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="InfosPaiement" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BO_Enchere" nillable="true" type="tns:BO_Enchere" />
+  <xs:complexType name="BO_Enchere">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="IdEnchere" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DemandeCreationEnchere" type="tns:BO_DemandeCreationEnchere" />
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
