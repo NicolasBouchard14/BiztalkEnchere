@@ -7,12 +7,14 @@ namespace BiztalkEnchereSchemas {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
     [Schema(@"http://BiztalkEnchereSchemas.EncherissementGagnant",@"EncherissementGagnant")]
-    [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdEnchere), XPath = @"/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Encherissement' and namespace-uri()='']/*[local-name()='IdEnchere' and namespace-uri()='']", XsdType = @"int")]
     [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdUtilisateur_Vendeur), XPath = @"/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Utilisateur_Vendeur' and namespace-uri()='']/*[local-name()='IdUtilisateur' and namespace-uri()='']", XsdType = @"int")]
     [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdUtilisateur_EncherisseurGagnant), XPath = @"/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Utilisateur_Encherisseur' and namespace-uri()='']/*[local-name()='IdUtilisateur' and namespace-uri()='']", XsdType = @"int")]
+    [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.PropertySchema.IdEnchere), XPath = @"/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Encherissement' and namespace-uri()='']/*[local-name()='IdEnchere' and namespace-uri()='']", XsdType = @"int")]
+    [Microsoft.XLANGs.BaseTypes.PropertyAttribute(typeof(global::BiztalkEnchereSchemas.CommonIdEnchere), XPath = @"/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Encherissement' and namespace-uri()='']/*[local-name()='IdEnchere' and namespace-uri()='']", XsdType = @"int")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"EncherissementGagnant"})]
     [Microsoft.XLANGs.BaseTypes.SchemaReference(@"BiztalkEnchereSchemas.CorrelationSchema", typeof(global::BiztalkEnchereSchemas.CorrelationSchema))]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"BiztalkEnchereSchemas.PropertySchema.PropertySchema", typeof(global::BiztalkEnchereSchemas.PropertySchema.PropertySchema))]
     public sealed class EncherissementGagnant : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -20,11 +22,12 @@ namespace BiztalkEnchereSchemas {
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns=""http://BiztalkEnchereSchemas.EncherissementGagnant"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ns0=""https://BiztalkEnchereSchemas.CorrelationSchema"" targetNamespace=""http://BiztalkEnchereSchemas.EncherissementGagnant"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns=""http://BiztalkEnchereSchemas.EncherissementGagnant"" xmlns:ns1=""https://BiztalkEnchereSchemas.PropertySchema"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ns0=""https://BiztalkEnchereSchemas.CorrelationSchema"" targetNamespace=""http://BiztalkEnchereSchemas.EncherissementGagnant"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:annotation>
     <xs:appinfo>
       <b:imports>
         <b:namespace prefix=""ns0"" uri=""https://BiztalkEnchereSchemas.CorrelationSchema"" location=""BiztalkEnchereSchemas.CorrelationSchema"" />
+        <b:namespace prefix=""ns1"" uri=""https://BiztalkEnchereSchemas.PropertySchema"" location=""BiztalkEnchereSchemas.PropertySchema.PropertySchema"" />
       </b:imports>
     </xs:appinfo>
   </xs:annotation>
@@ -32,9 +35,10 @@ namespace BiztalkEnchereSchemas {
     <xs:annotation>
       <xs:appinfo>
         <b:properties>
-          <b:property name=""ns0:CommonIdEnchere"" xpath=""/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Encherissement' and namespace-uri()='']/*[local-name()='IdEnchere' and namespace-uri()='']"" />
           <b:property name=""ns0:CommonIdUtilisateur_Vendeur"" xpath=""/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Utilisateur_Vendeur' and namespace-uri()='']/*[local-name()='IdUtilisateur' and namespace-uri()='']"" />
           <b:property name=""ns0:CommonIdUtilisateur_EncherisseurGagnant"" xpath=""/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Utilisateur_Encherisseur' and namespace-uri()='']/*[local-name()='IdUtilisateur' and namespace-uri()='']"" />
+          <b:property name=""ns1:IdEnchere"" xpath=""/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Encherissement' and namespace-uri()='']/*[local-name()='IdEnchere' and namespace-uri()='']"" />
+          <b:property name=""ns0:CommonIdEnchere"" xpath=""/*[local-name()='EncherissementGagnant' and namespace-uri()='http://BiztalkEnchereSchemas.EncherissementGagnant']/*[local-name()='Encherissement' and namespace-uri()='']/*[local-name()='IdEnchere' and namespace-uri()='']"" />
         </b:properties>
       </xs:appinfo>
     </xs:annotation>

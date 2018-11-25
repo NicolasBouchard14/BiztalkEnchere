@@ -2,7 +2,7 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="2837c7e1-acdd-4df9-bbc9-9258edb04edb" LowerBound="1.1" HigherBound="412.1">
+    <om:Element Type="Module" OID="2837c7e1-acdd-4df9-bbc9-9258edb04edb" LowerBound="1.1" HigherBound="430.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="BiztalkEnchereOrchestration" />
         <om:Property Name="Signal" Value="False" />
@@ -310,7 +310,7 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="ServiceDeclaration" OID="269bfa15-0248-4a13-981e-ba6a2919f1a0" ParentLink="Module_ServiceDeclaration" LowerBound="128.1" HigherBound="411.1">
+        <om:Element Type="ServiceDeclaration" OID="269bfa15-0248-4a13-981e-ba6a2919f1a0" ParentLink="Module_ServiceDeclaration" LowerBound="128.1" HigherBound="429.1">
             <om:Property Name="InitializedTransactionType" Value="True" />
             <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
@@ -337,7 +337,7 @@
                     <om:Property Name="Name" Value="StatementRef_4" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="StatementRef" OID="f04995a0-81d5-4758-8c46-1ab50753b9ca" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="316.116" HigherBound="316.145">
+                <om:Element Type="StatementRef" OID="f04995a0-81d5-4758-8c46-1ab50753b9ca" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="325.116" HigherBound="325.145">
                     <om:Property Name="Initializes" Value="False" />
                     <om:Property Name="Ref" Value="e84f3573-c3ee-499a-ab22-00a8987482cb" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
@@ -358,28 +358,28 @@
                     <om:Property Name="Name" Value="StatementRef_9" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="StatementRef" OID="99720adb-5e0f-4327-ba07-0b060a4ff304" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="331.140" HigherBound="331.169">
+                <om:Element Type="StatementRef" OID="99720adb-5e0f-4327-ba07-0b060a4ff304" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="343.144" HigherBound="343.173">
                     <om:Property Name="Initializes" Value="False" />
                     <om:Property Name="Ref" Value="637e485a-966c-4632-851c-c52d4b547e4e" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="StatementRef_11" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="StatementRef" OID="55ddf831-ccde-4f49-8f5f-7461e5168327" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="353.142" HigherBound="353.171">
+                <om:Element Type="StatementRef" OID="55ddf831-ccde-4f49-8f5f-7461e5168327" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="365.146" HigherBound="365.175">
                     <om:Property Name="Initializes" Value="False" />
                     <om:Property Name="Ref" Value="2c3ceafa-40aa-4446-87f2-21bc5cf65759" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="StatementRef_12" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="StatementRef" OID="073116b0-e37e-414e-849e-a2387488cd4c" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="329.147" HigherBound="329.176">
+                <om:Element Type="StatementRef" OID="073116b0-e37e-414e-849e-a2387488cd4c" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="341.151" HigherBound="341.180">
                     <om:Property Name="Initializes" Value="False" />
                     <om:Property Name="Ref" Value="fd16c19f-a326-4ee6-ad3c-8bf5804ff3e5" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="StatementRef_16" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
-                <om:Element Type="StatementRef" OID="50f2b04d-97dd-4f0b-af90-9ad46fc248e9" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="351.133" HigherBound="351.162">
+                <om:Element Type="StatementRef" OID="50f2b04d-97dd-4f0b-af90-9ad46fc248e9" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="363.137" HigherBound="363.166">
                     <om:Property Name="Initializes" Value="False" />
                     <om:Property Name="Ref" Value="dc2e849e-6e1b-4736-a511-568f845bf533" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
@@ -940,17 +940,17 @@
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
                 </om:Element>
-                <om:Element Type="Decision" OID="7be1b91b-7a09-4ead-aeb7-b9cc69007d9c" ParentLink="ServiceBody_Statement" LowerBound="209.1" HigherBound="409.1">
+                <om:Element Type="Decision" OID="7be1b91b-7a09-4ead-aeb7-b9cc69007d9c" ParentLink="ServiceBody_Statement" LowerBound="209.1" HigherBound="427.1">
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Sauvegarde enchère réussie ?" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="DecisionBranch" OID="cf854e38-7c46-424b-bf07-8a05c43fdaf4" ParentLink="ReallyComplexStatement_Branch" LowerBound="210.13" HigherBound="396.1">
+                    <om:Element Type="DecisionBranch" OID="cf854e38-7c46-424b-bf07-8a05c43fdaf4" ParentLink="ReallyComplexStatement_Branch" LowerBound="210.13" HigherBound="414.1">
                         <om:Property Name="Expression" Value="EnchereMessage(BiztalkEnchereSchemas.CommonIdEnchere) != 0" />
                         <om:Property Name="IsGhostBranch" Value="True" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="Oui" />
                         <om:Property Name="Signal" Value="False" />
-                        <om:Element Type="Scope" OID="e8787914-4abe-4f2d-b2bf-2b64626c4dde" ParentLink="ComplexStatement_Statement" LowerBound="212.1" HigherBound="395.1">
+                        <om:Element Type="Scope" OID="e8787914-4abe-4f2d-b2bf-2b64626c4dde" ParentLink="ComplexStatement_Statement" LowerBound="212.1" HigherBound="413.1">
                             <om:Property Name="InitializedTransactionType" Value="True" />
                             <om:Property Name="IsSynchronized" Value="False" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
@@ -1096,7 +1096,7 @@
                                     <om:Property Name="Signal" Value="False" />
                                 </om:Element>
                             </om:Element>
-                            <om:Element Type="While" OID="b465f42c-d43b-4736-a7c5-d0485229b6a4" ParentLink="ComplexStatement_Statement" LowerBound="261.1" HigherBound="378.1">
+                            <om:Element Type="While" OID="b465f42c-d43b-4736-a7c5-d0485229b6a4" ParentLink="ComplexStatement_Statement" LowerBound="261.1" HigherBound="396.1">
                                 <om:Property Name="Expression" Value="SauvegarderPaiementResponseMessage.SauvegarderInfosPaiementResult == false" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Name" Value="Boucle_1" />
@@ -1149,16 +1149,16 @@
                                         <om:Property Name="Signal" Value="False" />
                                     </om:Element>
                                 </om:Element>
-                                <om:Element Type="Decision" OID="2b34616c-f7bd-4e41-a4f5-040c05a809c2" ParentLink="ComplexStatement_Statement" LowerBound="274.1" HigherBound="377.1">
+                                <om:Element Type="Decision" OID="2b34616c-f7bd-4e41-a4f5-040c05a809c2" ParentLink="ComplexStatement_Statement" LowerBound="274.1" HigherBound="395.1">
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="Vérifier s'il y a un gagnant" />
                                     <om:Property Name="Signal" Value="True" />
                                     <om:Element Type="DecisionBranch" OID="56e85a00-e041-4217-887e-ee7267d49dce" ParentLink="ReallyComplexStatement_Branch" LowerBound="275.29" HigherBound="282.1">
-                                        <om:Property Name="Expression" Value="EncherissementGagnantMessage(BiztalkEnchereSchemas.CommonIdEnchere) == 0 " />
+                                        <om:Property Name="Expression" Value="EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdEnchere) == 0 " />
                                         <om:Property Name="IsGhostBranch" Value="True" />
                                         <om:Property Name="ReportToAnalyst" Value="True" />
                                         <om:Property Name="Name" Value="PasDeGagnant" />
-                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Property Name="Signal" Value="True" />
                                         <om:Element Type="Send" OID="a183f41b-5751-4959-a0c3-c67d8688ebef" ParentLink="ComplexStatement_Statement" LowerBound="277.1" HigherBound="279.1">
                                             <om:Property Name="PortName" Value="PortEnvoi_CourrielAucunGagnantToVendeur" />
                                             <om:Property Name="MessageName" Value="EnchereMessage" />
@@ -1198,10 +1198,10 @@
                                             <om:Property Name="Name" Value="Envoyer_CourrielGagnantDemanderPaiement" />
                                             <om:Property Name="Signal" Value="True" />
                                         </om:Element>
-                                        <om:Element Type="Listen" OID="7abc60b1-5108-4736-9f7b-a85fa66fe2fb" ParentLink="ComplexStatement_Statement" LowerBound="288.1" HigherBound="376.1">
+                                        <om:Element Type="Listen" OID="7abc60b1-5108-4736-9f7b-a85fa66fe2fb" ParentLink="ComplexStatement_Statement" LowerBound="288.1" HigherBound="394.1">
                                             <om:Property Name="ReportToAnalyst" Value="True" />
-                                            <om:Property Name="Name" Value="Écouter_2" />
-                                            <om:Property Name="Signal" Value="False" />
+                                            <om:Property Name="Name" Value="Paiement &lt; 24H ou utilisateur gagnant banni" />
+                                            <om:Property Name="Signal" Value="True" />
                                             <om:Element Type="ListenBranch" OID="156af597-8873-4e66-ad28-e5582b2f7fac" ParentLink="ReallyComplexStatement_Branch" LowerBound="288.1" HigherBound="288.1">
                                                 <om:Property Name="IsGhostBranch" Value="True" />
                                                 <om:Property Name="ReportToAnalyst" Value="True" />
@@ -1242,54 +1242,78 @@
                                                     <om:Property Name="Name" Value="Recevoir_BannirEncherisseurGagnantResponse" />
                                                     <om:Property Name="Signal" Value="True" />
                                                 </om:Element>
-                                                <om:Element Type="Construct" OID="4aa644a4-70f4-456a-adb5-0062e938f687" ParentLink="ComplexStatement_Statement" LowerBound="304.1" HigherBound="312.1">
+                                                <om:Element Type="Decision" OID="e1844935-b2e0-4fd6-8315-1e37e69f679b" ParentLink="ComplexStatement_Statement" LowerBound="304.1" HigherBound="323.1">
                                                     <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="ConstruireCourrielUtilisateurBanni" />
+                                                    <om:Property Name="Name" Value="Bannir gagnant réussi?" />
                                                     <om:Property Name="Signal" Value="True" />
-                                                    <om:Element Type="Transform" OID="f2260d4a-481b-4f35-b1a2-b502d159a325" ParentLink="ComplexStatement_Statement" LowerBound="307.1" HigherBound="309.1">
-                                                        <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.Mapper.MapEncherissementGagnantToCourrielUtilisateurBanni" />
+                                                    <om:Element Type="DecisionBranch" OID="5e162ad8-3c92-4afe-9c3d-a1cf1eddfe79" ParentLink="ReallyComplexStatement_Branch" LowerBound="305.41" HigherBound="318.1">
+                                                        <om:Property Name="Expression" Value="BannirEncherisseurGagnantResponseMessage.BannirEncherisseurGagnantResult == true" />
+                                                        <om:Property Name="IsGhostBranch" Value="True" />
                                                         <om:Property Name="ReportToAnalyst" Value="True" />
-                                                        <om:Property Name="Name" Value="Transformer_EncherissementGagnantToCourrielUtilisateurBanni" />
-                                                        <om:Property Name="Signal" Value="False" />
-                                                        <om:Element Type="MessagePartRef" OID="7037be6f-5283-4a6f-a6f8-70e5696fc934" ParentLink="Transform_OutputMessagePartRef" LowerBound="308.56" HigherBound="308.87">
-                                                            <om:Property Name="MessageRef" Value="CourrielUtilisateurBanniMessage" />
-                                                            <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="RéférencePartieMessage_14" />
-                                                            <om:Property Name="Signal" Value="False" />
-                                                        </om:Element>
-                                                        <om:Element Type="MessagePartRef" OID="00a08dea-adfb-4e13-bdb2-c1c77c0b98ff" ParentLink="Transform_InputMessagePartRef" LowerBound="308.178" HigherBound="308.206">
-                                                            <om:Property Name="MessageRef" Value="EncherissementGagnantMessage" />
-                                                            <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="RéférencePartieMessage_13" />
-                                                            <om:Property Name="Signal" Value="False" />
-                                                        </om:Element>
-                                                    </om:Element>
-                                                    <om:Element Type="MessageAssignment" OID="b890cfa6-d4e3-4033-8c15-31d9026e52a4" ParentLink="ComplexStatement_Statement" LowerBound="309.1" HigherBound="311.1">
-                                                        <om:Property Name="Expression" Value="CourrielUtilisateurBanniMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere) = EnchereMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere);" />
-                                                        <om:Property Name="ReportToAnalyst" Value="False" />
-                                                        <om:Property Name="Name" Value="AssignationMessage_1" />
+                                                        <om:Property Name="Name" Value="Oui" />
                                                         <om:Property Name="Signal" Value="True" />
+                                                        <om:Element Type="Construct" OID="4aa644a4-70f4-456a-adb5-0062e938f687" ParentLink="ComplexStatement_Statement" LowerBound="307.1" HigherBound="315.1">
+                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                            <om:Property Name="Name" Value="ConstruireCourrielUtilisateurBanni" />
+                                                            <om:Property Name="Signal" Value="True" />
+                                                            <om:Element Type="Transform" OID="f2260d4a-481b-4f35-b1a2-b502d159a325" ParentLink="ComplexStatement_Statement" LowerBound="310.1" HigherBound="312.1">
+                                                                <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.Mapper.MapEncherissementGagnantToCourrielUtilisateurBanni" />
+                                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                <om:Property Name="Name" Value="Transformer_EncherissementGagnantToCourrielUtilisateurBanni" />
+                                                                <om:Property Name="Signal" Value="False" />
+                                                                <om:Element Type="MessagePartRef" OID="7037be6f-5283-4a6f-a6f8-70e5696fc934" ParentLink="Transform_OutputMessagePartRef" LowerBound="311.60" HigherBound="311.91">
+                                                                    <om:Property Name="MessageRef" Value="CourrielUtilisateurBanniMessage" />
+                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                    <om:Property Name="Name" Value="RéférencePartieMessage_14" />
+                                                                    <om:Property Name="Signal" Value="False" />
+                                                                </om:Element>
+                                                                <om:Element Type="MessagePartRef" OID="00a08dea-adfb-4e13-bdb2-c1c77c0b98ff" ParentLink="Transform_InputMessagePartRef" LowerBound="311.182" HigherBound="311.210">
+                                                                    <om:Property Name="MessageRef" Value="EncherissementGagnantMessage" />
+                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                    <om:Property Name="Name" Value="RéférencePartieMessage_13" />
+                                                                    <om:Property Name="Signal" Value="False" />
+                                                                </om:Element>
+                                                            </om:Element>
+                                                            <om:Element Type="MessageAssignment" OID="b890cfa6-d4e3-4033-8c15-31d9026e52a4" ParentLink="ComplexStatement_Statement" LowerBound="312.1" HigherBound="314.1">
+                                                                <om:Property Name="Expression" Value="CourrielUtilisateurBanniMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere) = EnchereMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere);" />
+                                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                                <om:Property Name="Name" Value="AssignationMessage_1" />
+                                                                <om:Property Name="Signal" Value="True" />
+                                                            </om:Element>
+                                                            <om:Element Type="MessageRef" OID="87038631-e6ff-47c2-875e-6d4874c41aad" ParentLink="Construct_MessageRef" LowerBound="308.55" HigherBound="308.86">
+                                                                <om:Property Name="Ref" Value="CourrielUtilisateurBanniMessage" />
+                                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                <om:Property Name="Signal" Value="False" />
+                                                            </om:Element>
+                                                        </om:Element>
+                                                        <om:Element Type="Send" OID="c51d3ccf-14fb-455a-9c6e-fd601920975c" ParentLink="ComplexStatement_Statement" LowerBound="315.1" HigherBound="317.1">
+                                                            <om:Property Name="PortName" Value="PortEnvoi_CourrielUtilisateurBanniToGagnant" />
+                                                            <om:Property Name="MessageName" Value="CourrielUtilisateurBanniMessage" />
+                                                            <om:Property Name="OperationName" Value="Opération_1" />
+                                                            <om:Property Name="OperationMessageName" Value="Requête" />
+                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                            <om:Property Name="Name" Value="Envoyer_CourrielUtilisateurBanni" />
+                                                            <om:Property Name="Signal" Value="True" />
+                                                        </om:Element>
                                                     </om:Element>
-                                                    <om:Element Type="MessageRef" OID="87038631-e6ff-47c2-875e-6d4874c41aad" ParentLink="Construct_MessageRef" LowerBound="305.51" HigherBound="305.82">
-                                                        <om:Property Name="Ref" Value="CourrielUtilisateurBanniMessage" />
+                                                    <om:Element Type="DecisionBranch" OID="7d8eb4cf-6109-479a-af49-e2f7073ca9dd" ParentLink="ReallyComplexStatement_Branch">
+                                                        <om:Property Name="IsGhostBranch" Value="True" />
                                                         <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="Sinon" />
                                                         <om:Property Name="Signal" Value="False" />
+                                                        <om:Element Type="Terminate" OID="d66257af-ddbd-4705-89bf-e76f7d7f44d4" ParentLink="ComplexStatement_Statement" LowerBound="320.1" HigherBound="322.1">
+                                                            <om:Property Name="ErrorMessage" Value="&quot;Bannir l'enchérisseur gagnant a échoué. Processus terminé.&quot;;" />
+                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                            <om:Property Name="Name" Value="Terminer_BannirGagnantEchec" />
+                                                            <om:Property Name="Signal" Value="False" />
+                                                        </om:Element>
                                                     </om:Element>
-                                                </om:Element>
-                                                <om:Element Type="Send" OID="c51d3ccf-14fb-455a-9c6e-fd601920975c" ParentLink="ComplexStatement_Statement" LowerBound="312.1" HigherBound="314.1">
-                                                    <om:Property Name="PortName" Value="PortEnvoi_CourrielUtilisateurBanniToGagnant" />
-                                                    <om:Property Name="MessageName" Value="CourrielUtilisateurBanniMessage" />
-                                                    <om:Property Name="OperationName" Value="Opération_1" />
-                                                    <om:Property Name="OperationMessageName" Value="Requête" />
-                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="Envoyer_CourrielUtilisateurBanni" />
-                                                    <om:Property Name="Signal" Value="True" />
                                                 </om:Element>
                                                 <om:Element Type="Delay" OID="6547ab56-016a-4245-848f-d8ab59331979" ParentLink="ListenBranch_Statement" LowerBound="291.1" HigherBound="292.74">
-                                                    <om:Property Name="Timeout" Value="new System.TimeSpan(24, 0, 0)" />
+                                                    <om:Property Name="Timeout" Value="new System.TimeSpan(0, 0, 30)" />
                                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                                     <om:Property Name="Name" Value="Délai_24H" />
-                                                    <om:Property Name="Signal" Value="False" />
+                                                    <om:Property Name="Signal" Value="True" />
                                                 </om:Element>
                                             </om:Element>
                                             <om:Element Type="ListenBranch" OID="5b82e5d1-e69e-4863-bbff-ce2098e00243" ParentLink="ReallyComplexStatement_Branch" LowerBound="288.1" HigherBound="288.1">
@@ -1297,36 +1321,36 @@
                                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                                 <om:Property Name="Name" Value="BrancheÉcouter_4" />
                                                 <om:Property Name="Signal" Value="True" />
-                                                <om:Element Type="Construct" OID="47fd8bc9-8414-4a8f-bed1-de19c8143450" ParentLink="ComplexStatement_Statement" LowerBound="318.1" HigherBound="324.1">
+                                                <om:Element Type="Construct" OID="47fd8bc9-8414-4a8f-bed1-de19c8143450" ParentLink="ComplexStatement_Statement" LowerBound="327.1" HigherBound="333.1">
                                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                                     <om:Property Name="Name" Value="ConstruireSauvegarderPaiementRequestMessage" />
                                                     <om:Property Name="Signal" Value="True" />
-                                                    <om:Element Type="Transform" OID="9e71b03f-f385-4d23-aa91-be23ad8f7689" ParentLink="ComplexStatement_Statement" LowerBound="321.1" HigherBound="323.1">
+                                                    <om:Element Type="Transform" OID="9e71b03f-f385-4d23-aa91-be23ad8f7689" ParentLink="ComplexStatement_Statement" LowerBound="330.1" HigherBound="332.1">
                                                         <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.Mapper.MapPaiementToSauvegarderPaiementInfosRequest" />
                                                         <om:Property Name="ReportToAnalyst" Value="True" />
                                                         <om:Property Name="Name" Value="TransformerPaiementToSauvegarderPaiementRequest" />
                                                         <om:Property Name="Signal" Value="True" />
-                                                        <om:Element Type="MessagePartRef" OID="c0ce35aa-b4aa-4b28-87cb-0ae78b8adabb" ParentLink="Transform_OutputMessagePartRef" LowerBound="322.56" HigherBound="322.99">
+                                                        <om:Element Type="MessagePartRef" OID="c0ce35aa-b4aa-4b28-87cb-0ae78b8adabb" ParentLink="Transform_OutputMessagePartRef" LowerBound="331.56" HigherBound="331.99">
                                                             <om:Property Name="MessageRef" Value="SauvegarderPaiementRequestMessage" />
                                                             <om:Property Name="PartRef" Value="pPaiement" />
                                                             <om:Property Name="ReportToAnalyst" Value="True" />
                                                             <om:Property Name="Name" Value="RéférencePartieMessage_10" />
                                                             <om:Property Name="Signal" Value="False" />
                                                         </om:Element>
-                                                        <om:Element Type="MessagePartRef" OID="87ce451f-627e-4e2d-9588-9bd67cb6f0eb" ParentLink="Transform_InputMessagePartRef" LowerBound="322.184" HigherBound="322.199">
+                                                        <om:Element Type="MessagePartRef" OID="87ce451f-627e-4e2d-9588-9bd67cb6f0eb" ParentLink="Transform_InputMessagePartRef" LowerBound="331.184" HigherBound="331.199">
                                                             <om:Property Name="MessageRef" Value="PaiementMessage" />
                                                             <om:Property Name="ReportToAnalyst" Value="True" />
                                                             <om:Property Name="Name" Value="RéférencePartieMessage_9" />
                                                             <om:Property Name="Signal" Value="False" />
                                                         </om:Element>
                                                     </om:Element>
-                                                    <om:Element Type="MessageRef" OID="fc4199af-8949-46a7-84ce-bc08f108b428" ParentLink="Construct_MessageRef" LowerBound="319.51" HigherBound="319.84">
+                                                    <om:Element Type="MessageRef" OID="fc4199af-8949-46a7-84ce-bc08f108b428" ParentLink="Construct_MessageRef" LowerBound="328.51" HigherBound="328.84">
                                                         <om:Property Name="Ref" Value="SauvegarderPaiementRequestMessage" />
                                                         <om:Property Name="ReportToAnalyst" Value="True" />
                                                         <om:Property Name="Signal" Value="False" />
                                                     </om:Element>
                                                 </om:Element>
-                                                <om:Element Type="Send" OID="fbf81e0e-499c-4b92-97a6-cea32c03f727" ParentLink="ComplexStatement_Statement" LowerBound="324.1" HigherBound="326.1">
+                                                <om:Element Type="Send" OID="fbf81e0e-499c-4b92-97a6-cea32c03f727" ParentLink="ComplexStatement_Statement" LowerBound="333.1" HigherBound="335.1">
                                                     <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
                                                     <om:Property Name="MessageName" Value="SauvegarderPaiementRequestMessage" />
                                                     <om:Property Name="OperationName" Value="SauvegarderInfosPaiement" />
@@ -1335,7 +1359,7 @@
                                                     <om:Property Name="Name" Value="Envoyer_SauvegarderPaiementRequest" />
                                                     <om:Property Name="Signal" Value="True" />
                                                 </om:Element>
-                                                <om:Element Type="Receive" OID="0fed48d0-f062-411d-9cd1-5f59b51cdc24" ParentLink="ComplexStatement_Statement" LowerBound="326.1" HigherBound="328.1">
+                                                <om:Element Type="Receive" OID="0fed48d0-f062-411d-9cd1-5f59b51cdc24" ParentLink="ComplexStatement_Statement" LowerBound="335.1" HigherBound="337.1">
                                                     <om:Property Name="Activate" Value="False" />
                                                     <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
                                                     <om:Property Name="MessageName" Value="SauvegarderPaiementResponseMessage" />
@@ -1345,176 +1369,200 @@
                                                     <om:Property Name="Name" Value="Recevoir_SauvegarderPaiementResponse" />
                                                     <om:Property Name="Signal" Value="True" />
                                                 </om:Element>
-                                                <om:Element Type="Send" OID="fd16c19f-a326-4ee6-ad3c-8bf5804ff3e5" ParentLink="ComplexStatement_Statement" LowerBound="328.1" HigherBound="330.1">
-                                                    <om:Property Name="PortName" Value="PortEnvoi_CourrielDemanderEvaluationTransactionToGagnant" />
-                                                    <om:Property Name="MessageName" Value="EncherissementGagnantMessage" />
-                                                    <om:Property Name="OperationName" Value="Opération_1" />
-                                                    <om:Property Name="OperationMessageName" Value="Requête" />
+                                                <om:Element Type="Decision" OID="3e2d7758-09b9-4087-b2ce-a5fb5fd0d508" ParentLink="ComplexStatement_Statement" LowerBound="337.1" HigherBound="392.1">
                                                     <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="Envoyer_DemanderEvaluationTransaction" />
+                                                    <om:Property Name="Name" Value="Sauvegarder infos paiement réussi ?" />
                                                     <om:Property Name="Signal" Value="True" />
-                                                </om:Element>
-                                                <om:Element Type="Receive" OID="637e485a-966c-4632-851c-c52d4b547e4e" ParentLink="ComplexStatement_Statement" LowerBound="330.1" HigherBound="332.1">
-                                                    <om:Property Name="Activate" Value="False" />
-                                                    <om:Property Name="PortName" Value="PortReception_EvaluationTransactionFromGagnant" />
-                                                    <om:Property Name="MessageName" Value="EvaluationTransactionMessage" />
-                                                    <om:Property Name="OperationName" Value="Opération_1" />
-                                                    <om:Property Name="OperationMessageName" Value="Requête" />
-                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="Recevoir_EvaluationTransaction" />
-                                                    <om:Property Name="Signal" Value="True" />
-                                                </om:Element>
-                                                <om:Element Type="Construct" OID="3bd06aba-eda1-4501-95d5-23c4f0259a65" ParentLink="ComplexStatement_Statement" LowerBound="332.1" HigherBound="338.1">
-                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="ConstruireSauvegarederEvaluationRequest" />
-                                                    <om:Property Name="Signal" Value="True" />
-                                                    <om:Element Type="Transform" OID="e4e83dd3-280b-4d68-aef0-f8a2fc8f2cf6" ParentLink="ComplexStatement_Statement" LowerBound="335.1" HigherBound="337.1">
-                                                        <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.Mapper.MapEvaluationTransactionToSauvegarderEvaluationRequest" />
-                                                        <om:Property Name="ReportToAnalyst" Value="True" />
-                                                        <om:Property Name="Name" Value="Transformer_EvaluationTransactionToSauvegarderEvaluationRequest" />
-                                                        <om:Property Name="Signal" Value="False" />
-                                                        <om:Element Type="MessagePartRef" OID="94b3ac48-f88a-4b6e-ba96-7f39a944bbb3" ParentLink="Transform_OutputMessagePartRef" LowerBound="336.56" HigherBound="336.103">
-                                                            <om:Property Name="MessageRef" Value="SauvegarderEvaluationRequestMessage" />
-                                                            <om:Property Name="PartRef" Value="pEvaluation" />
-                                                            <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="RéférencePartieMessage_12" />
-                                                            <om:Property Name="Signal" Value="False" />
-                                                        </om:Element>
-                                                        <om:Element Type="MessagePartRef" OID="87370f0a-5409-4cbd-90c7-c4b4e3a878aa" ParentLink="Transform_InputMessagePartRef" LowerBound="336.198" HigherBound="336.226">
-                                                            <om:Property Name="MessageRef" Value="EvaluationTransactionMessage" />
-                                                            <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="RéférencePartieMessage_11" />
-                                                            <om:Property Name="Signal" Value="False" />
-                                                        </om:Element>
-                                                    </om:Element>
-                                                    <om:Element Type="MessageRef" OID="08df3f2e-dea9-4e19-b24b-f5f3e7ad6bd3" ParentLink="Construct_MessageRef" LowerBound="333.51" HigherBound="333.86">
-                                                        <om:Property Name="Ref" Value="SauvegarderEvaluationRequestMessage" />
-                                                        <om:Property Name="ReportToAnalyst" Value="True" />
-                                                        <om:Property Name="Signal" Value="False" />
-                                                    </om:Element>
-                                                </om:Element>
-                                                <om:Element Type="Send" OID="275d946c-232b-48cc-9750-108ef4212055" ParentLink="ComplexStatement_Statement" LowerBound="338.1" HigherBound="340.1">
-                                                    <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
-                                                    <om:Property Name="MessageName" Value="SauvegarderEvaluationRequestMessage" />
-                                                    <om:Property Name="OperationName" Value="SauvegarderEvaluation" />
-                                                    <om:Property Name="OperationMessageName" Value="Request" />
-                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="Envoyer_SauvegarderEvaluationRequest" />
-                                                    <om:Property Name="Signal" Value="True" />
-                                                </om:Element>
-                                                <om:Element Type="Receive" OID="8f53aafa-087e-44d6-8937-3158dd6772c7" ParentLink="ComplexStatement_Statement" LowerBound="340.1" HigherBound="342.1">
-                                                    <om:Property Name="Activate" Value="False" />
-                                                    <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
-                                                    <om:Property Name="MessageName" Value="SauvegarderEvaluationResponseMessage" />
-                                                    <om:Property Name="OperationName" Value="SauvegarderEvaluation" />
-                                                    <om:Property Name="OperationMessageName" Value="Response" />
-                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="Recevoir_SauvegarderEvaluationResponse" />
-                                                    <om:Property Name="Signal" Value="True" />
-                                                </om:Element>
-                                                <om:Element Type="Decision" OID="d25186d4-43c4-4d8a-a0e1-83d2015cb148" ParentLink="ComplexStatement_Statement" LowerBound="342.1" HigherBound="374.1">
-                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                    <om:Property Name="Name" Value="Évaluation positive ?" />
-                                                    <om:Property Name="Signal" Value="True" />
-                                                    <om:Element Type="DecisionBranch" OID="428fb27d-3809-4463-9e4f-9d27602c8fce" ParentLink="ReallyComplexStatement_Branch" LowerBound="343.41" HigherBound="348.1">
-                                                        <om:Property Name="Expression" Value="EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.EvaluationGlobale) == true" />
+                                                    <om:Element Type="DecisionBranch" OID="474e4867-71f8-4767-8db2-71c8c7f8fe48" ParentLink="ReallyComplexStatement_Branch" LowerBound="338.41" HigherBound="387.1">
+                                                        <om:Property Name="Expression" Value="SauvegarderPaiementResponseMessage.SauvegarderInfosPaiementResult == true" />
                                                         <om:Property Name="IsGhostBranch" Value="True" />
                                                         <om:Property Name="ReportToAnalyst" Value="True" />
                                                         <om:Property Name="Name" Value="Oui" />
-                                                        <om:Property Name="Signal" Value="True" />
-                                                        <om:Element Type="Terminate" OID="34e54bda-6f9f-4351-ad3d-a366f7edff19" ParentLink="ComplexStatement_Statement" LowerBound="345.1" HigherBound="347.1">
-                                                            <om:Property Name="ErrorMessage" Value="&quot;Le processus d'enchère est terminé, l'évaluation reçu est positive.&quot;;" />
-                                                            <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="Terminer_EvaluationPrositive" />
-                                                            <om:Property Name="Signal" Value="False" />
-                                                        </om:Element>
-                                                    </om:Element>
-                                                    <om:Element Type="DecisionBranch" OID="1f0b3199-f315-4eeb-a248-6bd968e76fa9" ParentLink="ReallyComplexStatement_Branch">
-                                                        <om:Property Name="IsGhostBranch" Value="True" />
-                                                        <om:Property Name="ReportToAnalyst" Value="True" />
-                                                        <om:Property Name="Name" Value="Sinon" />
                                                         <om:Property Name="Signal" Value="False" />
-                                                        <om:Element Type="Send" OID="dc2e849e-6e1b-4736-a511-568f845bf533" ParentLink="ComplexStatement_Statement" LowerBound="350.1" HigherBound="352.1">
-                                                            <om:Property Name="PortName" Value="PortEnvoi_EvaluationTransactionToAgent" />
-                                                            <om:Property Name="MessageName" Value="EvaluationTransactionMessage" />
+                                                        <om:Element Type="Send" OID="fd16c19f-a326-4ee6-ad3c-8bf5804ff3e5" ParentLink="ComplexStatement_Statement" LowerBound="340.1" HigherBound="342.1">
+                                                            <om:Property Name="PortName" Value="PortEnvoi_CourrielDemanderEvaluationTransactionToGagnant" />
+                                                            <om:Property Name="MessageName" Value="EncherissementGagnantMessage" />
                                                             <om:Property Name="OperationName" Value="Opération_1" />
                                                             <om:Property Name="OperationMessageName" Value="Requête" />
                                                             <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="Envoyer_EvaluationTransactionToAgent" />
+                                                            <om:Property Name="Name" Value="Envoyer_DemanderEvaluationTransaction" />
                                                             <om:Property Name="Signal" Value="True" />
                                                         </om:Element>
-                                                        <om:Element Type="Receive" OID="2c3ceafa-40aa-4446-87f2-21bc5cf65759" ParentLink="ComplexStatement_Statement" LowerBound="352.1" HigherBound="354.1">
+                                                        <om:Element Type="Receive" OID="637e485a-966c-4632-851c-c52d4b547e4e" ParentLink="ComplexStatement_Statement" LowerBound="342.1" HigherBound="344.1">
                                                             <om:Property Name="Activate" Value="False" />
-                                                            <om:Property Name="PortName" Value="PortReception_EvaluationTransactionFromAgent" />
+                                                            <om:Property Name="PortName" Value="PortReception_EvaluationTransactionFromGagnant" />
                                                             <om:Property Name="MessageName" Value="EvaluationTransactionMessage" />
                                                             <om:Property Name="OperationName" Value="Opération_1" />
                                                             <om:Property Name="OperationMessageName" Value="Requête" />
                                                             <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="Recevoir_EvaluationTransactionFromAgent" />
+                                                            <om:Property Name="Name" Value="Recevoir_EvaluationTransaction" />
                                                             <om:Property Name="Signal" Value="True" />
                                                         </om:Element>
-                                                        <om:Element Type="Decision" OID="377facfe-8f35-4bbe-bbcc-43a0e8b4e4d1" ParentLink="ComplexStatement_Statement" LowerBound="354.1" HigherBound="373.1">
+                                                        <om:Element Type="Construct" OID="3bd06aba-eda1-4501-95d5-23c4f0259a65" ParentLink="ComplexStatement_Statement" LowerBound="344.1" HigherBound="350.1">
                                                             <om:Property Name="ReportToAnalyst" Value="True" />
-                                                            <om:Property Name="Name" Value="Évaluation approuvée par agent ?" />
+                                                            <om:Property Name="Name" Value="ConstruireSauvegarderEvaluationRequest" />
                                                             <om:Property Name="Signal" Value="True" />
-                                                            <om:Element Type="DecisionBranch" OID="a7510d1c-acb5-4c93-87b9-38c5fb316880" ParentLink="ReallyComplexStatement_Branch" LowerBound="355.45" HigherBound="368.1">
-                                                                <om:Property Name="Expression" Value="EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.Approuvee) == true" />
+                                                            <om:Element Type="Transform" OID="e4e83dd3-280b-4d68-aef0-f8a2fc8f2cf6" ParentLink="ComplexStatement_Statement" LowerBound="347.1" HigherBound="349.1">
+                                                                <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.Mapper.MapEvaluationTransactionToSauvegarderEvaluationRequest" />
+                                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                <om:Property Name="Name" Value="Transformer_EvaluationTransactionToSauvegarderEvaluationRequest" />
+                                                                <om:Property Name="Signal" Value="False" />
+                                                                <om:Element Type="MessagePartRef" OID="94b3ac48-f88a-4b6e-ba96-7f39a944bbb3" ParentLink="Transform_OutputMessagePartRef" LowerBound="348.60" HigherBound="348.107">
+                                                                    <om:Property Name="MessageRef" Value="SauvegarderEvaluationRequestMessage" />
+                                                                    <om:Property Name="PartRef" Value="pEvaluation" />
+                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                    <om:Property Name="Name" Value="RéférencePartieMessage_12" />
+                                                                    <om:Property Name="Signal" Value="False" />
+                                                                </om:Element>
+                                                                <om:Element Type="MessagePartRef" OID="87370f0a-5409-4cbd-90c7-c4b4e3a878aa" ParentLink="Transform_InputMessagePartRef" LowerBound="348.202" HigherBound="348.230">
+                                                                    <om:Property Name="MessageRef" Value="EvaluationTransactionMessage" />
+                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                    <om:Property Name="Name" Value="RéférencePartieMessage_11" />
+                                                                    <om:Property Name="Signal" Value="False" />
+                                                                </om:Element>
+                                                            </om:Element>
+                                                            <om:Element Type="MessageRef" OID="08df3f2e-dea9-4e19-b24b-f5f3e7ad6bd3" ParentLink="Construct_MessageRef" LowerBound="345.55" HigherBound="345.90">
+                                                                <om:Property Name="Ref" Value="SauvegarderEvaluationRequestMessage" />
+                                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                <om:Property Name="Signal" Value="False" />
+                                                            </om:Element>
+                                                        </om:Element>
+                                                        <om:Element Type="Send" OID="275d946c-232b-48cc-9750-108ef4212055" ParentLink="ComplexStatement_Statement" LowerBound="350.1" HigherBound="352.1">
+                                                            <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                                                            <om:Property Name="MessageName" Value="SauvegarderEvaluationRequestMessage" />
+                                                            <om:Property Name="OperationName" Value="SauvegarderEvaluation" />
+                                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                            <om:Property Name="Name" Value="Envoyer_SauvegarderEvaluationRequest" />
+                                                            <om:Property Name="Signal" Value="True" />
+                                                        </om:Element>
+                                                        <om:Element Type="Receive" OID="8f53aafa-087e-44d6-8937-3158dd6772c7" ParentLink="ComplexStatement_Statement" LowerBound="352.1" HigherBound="354.1">
+                                                            <om:Property Name="Activate" Value="False" />
+                                                            <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                                                            <om:Property Name="MessageName" Value="SauvegarderEvaluationResponseMessage" />
+                                                            <om:Property Name="OperationName" Value="SauvegarderEvaluation" />
+                                                            <om:Property Name="OperationMessageName" Value="Response" />
+                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                            <om:Property Name="Name" Value="Recevoir_SauvegarderEvaluationResponse" />
+                                                            <om:Property Name="Signal" Value="True" />
+                                                        </om:Element>
+                                                        <om:Element Type="Decision" OID="d25186d4-43c4-4d8a-a0e1-83d2015cb148" ParentLink="ComplexStatement_Statement" LowerBound="354.1" HigherBound="386.1">
+                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                            <om:Property Name="Name" Value="Évaluation positive ?" />
+                                                            <om:Property Name="Signal" Value="True" />
+                                                            <om:Element Type="DecisionBranch" OID="428fb27d-3809-4463-9e4f-9d27602c8fce" ParentLink="ReallyComplexStatement_Branch" LowerBound="355.45" HigherBound="360.1">
+                                                                <om:Property Name="Expression" Value="EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.EvaluationGlobale) == true" />
                                                                 <om:Property Name="IsGhostBranch" Value="True" />
                                                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                                                 <om:Property Name="Name" Value="Oui" />
                                                                 <om:Property Name="Signal" Value="True" />
-                                                                <om:Element Type="Construct" OID="7f47962c-76e3-42aa-bc20-385c0a268d0f" ParentLink="ComplexStatement_Statement" LowerBound="357.1" HigherBound="363.1">
+                                                                <om:Element Type="Terminate" OID="34e54bda-6f9f-4351-ad3d-a366f7edff19" ParentLink="ComplexStatement_Statement" LowerBound="357.1" HigherBound="359.1">
+                                                                    <om:Property Name="ErrorMessage" Value="&quot;Le processus d'enchère est terminé, l'évaluation reçu est positive.&quot;;" />
                                                                     <om:Property Name="ReportToAnalyst" Value="True" />
-                                                                    <om:Property Name="Name" Value="ConstruireBannirVendeurRequest" />
-                                                                    <om:Property Name="Signal" Value="True" />
-                                                                    <om:Element Type="MessageAssignment" OID="45ee75ea-29c9-4e89-8eae-e8b1254cdbc0" ParentLink="ComplexStatement_Statement" LowerBound="360.1" HigherBound="362.1">
-                                                                        <om:Property Name="Expression" Value="BannirVendeurRequestMessage.pIdUtilisateur_Vendeur = CommonIdUtilisateur_Vendeur_CorrelationSet(BiztalkEnchereSchemas.CommonIdUtilisateur_Vendeur);" />
-                                                                        <om:Property Name="ReportToAnalyst" Value="False" />
-                                                                        <om:Property Name="Name" Value="AssignationBannirVendeurRequest" />
-                                                                        <om:Property Name="Signal" Value="True" />
-                                                                    </om:Element>
-                                                                    <om:Element Type="MessageRef" OID="8587d678-fab8-4397-88ec-7680a2fb1bc2" ParentLink="Construct_MessageRef" LowerBound="358.59" HigherBound="358.86">
-                                                                        <om:Property Name="Ref" Value="BannirVendeurRequestMessage" />
-                                                                        <om:Property Name="ReportToAnalyst" Value="True" />
-                                                                        <om:Property Name="Signal" Value="False" />
-                                                                    </om:Element>
-                                                                </om:Element>
-                                                                <om:Element Type="Send" OID="1f7f1287-aa38-4d8c-84c4-a83e89964f29" ParentLink="ComplexStatement_Statement" LowerBound="363.1" HigherBound="365.1">
-                                                                    <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
-                                                                    <om:Property Name="MessageName" Value="BannirVendeurRequestMessage" />
-                                                                    <om:Property Name="OperationName" Value="BannirVendeur" />
-                                                                    <om:Property Name="OperationMessageName" Value="Request" />
-                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                                    <om:Property Name="Name" Value="Envoyer_BannierVendeurRequest" />
-                                                                    <om:Property Name="Signal" Value="True" />
-                                                                </om:Element>
-                                                                <om:Element Type="Receive" OID="d9feb763-6164-487a-a315-34c6e7c20e86" ParentLink="ComplexStatement_Statement" LowerBound="365.1" HigherBound="367.1">
-                                                                    <om:Property Name="Activate" Value="False" />
-                                                                    <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
-                                                                    <om:Property Name="MessageName" Value="BannirVendeurResponseMessage" />
-                                                                    <om:Property Name="OperationName" Value="BannirVendeur" />
-                                                                    <om:Property Name="OperationMessageName" Value="Response" />
-                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
-                                                                    <om:Property Name="Name" Value="Recevoir_BannirVendeurResponse" />
-                                                                    <om:Property Name="Signal" Value="True" />
+                                                                    <om:Property Name="Name" Value="Terminer_EvaluationPrositive" />
+                                                                    <om:Property Name="Signal" Value="False" />
                                                                 </om:Element>
                                                             </om:Element>
-                                                            <om:Element Type="DecisionBranch" OID="625f9f48-5c16-4a61-9227-cd23eca74891" ParentLink="ReallyComplexStatement_Branch">
+                                                            <om:Element Type="DecisionBranch" OID="1f0b3199-f315-4eeb-a248-6bd968e76fa9" ParentLink="ReallyComplexStatement_Branch">
                                                                 <om:Property Name="IsGhostBranch" Value="True" />
                                                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                                                 <om:Property Name="Name" Value="Sinon" />
                                                                 <om:Property Name="Signal" Value="False" />
-                                                                <om:Element Type="Terminate" OID="663e7e91-f26d-4a59-b877-342acdd755f0" ParentLink="ComplexStatement_Statement" LowerBound="370.1" HigherBound="372.1">
-                                                                    <om:Property Name="ErrorMessage" Value="&quot;Processus terminé, évaluation négative non-approuvée&quot;;" />
+                                                                <om:Element Type="Send" OID="dc2e849e-6e1b-4736-a511-568f845bf533" ParentLink="ComplexStatement_Statement" LowerBound="362.1" HigherBound="364.1">
+                                                                    <om:Property Name="PortName" Value="PortEnvoi_EvaluationTransactionToAgent" />
+                                                                    <om:Property Name="MessageName" Value="EvaluationTransactionMessage" />
+                                                                    <om:Property Name="OperationName" Value="Opération_1" />
+                                                                    <om:Property Name="OperationMessageName" Value="Requête" />
                                                                     <om:Property Name="ReportToAnalyst" Value="True" />
-                                                                    <om:Property Name="Name" Value="Terminer_1" />
+                                                                    <om:Property Name="Name" Value="Envoyer_EvaluationTransactionToAgent" />
                                                                     <om:Property Name="Signal" Value="True" />
+                                                                </om:Element>
+                                                                <om:Element Type="Receive" OID="2c3ceafa-40aa-4446-87f2-21bc5cf65759" ParentLink="ComplexStatement_Statement" LowerBound="364.1" HigherBound="366.1">
+                                                                    <om:Property Name="Activate" Value="False" />
+                                                                    <om:Property Name="PortName" Value="PortReception_EvaluationTransactionFromAgent" />
+                                                                    <om:Property Name="MessageName" Value="EvaluationTransactionMessage" />
+                                                                    <om:Property Name="OperationName" Value="Opération_1" />
+                                                                    <om:Property Name="OperationMessageName" Value="Requête" />
+                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                    <om:Property Name="Name" Value="Recevoir_EvaluationTransactionFromAgent" />
+                                                                    <om:Property Name="Signal" Value="True" />
+                                                                </om:Element>
+                                                                <om:Element Type="Decision" OID="377facfe-8f35-4bbe-bbcc-43a0e8b4e4d1" ParentLink="ComplexStatement_Statement" LowerBound="366.1" HigherBound="385.1">
+                                                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                    <om:Property Name="Name" Value="Évaluation approuvée par agent ?" />
+                                                                    <om:Property Name="Signal" Value="True" />
+                                                                    <om:Element Type="DecisionBranch" OID="a7510d1c-acb5-4c93-87b9-38c5fb316880" ParentLink="ReallyComplexStatement_Branch" LowerBound="367.49" HigherBound="380.1">
+                                                                        <om:Property Name="Expression" Value="EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.Approuvee) == true" />
+                                                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                        <om:Property Name="Name" Value="Oui" />
+                                                                        <om:Property Name="Signal" Value="True" />
+                                                                        <om:Element Type="Construct" OID="7f47962c-76e3-42aa-bc20-385c0a268d0f" ParentLink="ComplexStatement_Statement" LowerBound="369.1" HigherBound="375.1">
+                                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                            <om:Property Name="Name" Value="ConstruireBannirVendeurRequest" />
+                                                                            <om:Property Name="Signal" Value="True" />
+                                                                            <om:Element Type="MessageAssignment" OID="45ee75ea-29c9-4e89-8eae-e8b1254cdbc0" ParentLink="ComplexStatement_Statement" LowerBound="372.1" HigherBound="374.1">
+                                                                                <om:Property Name="Expression" Value="BannirVendeurRequestMessage.pIdUtilisateur_Vendeur = CommonIdUtilisateur_Vendeur_CorrelationSet(BiztalkEnchereSchemas.CommonIdUtilisateur_Vendeur);" />
+                                                                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                                                                <om:Property Name="Name" Value="AssignationBannirVendeurRequest" />
+                                                                                <om:Property Name="Signal" Value="True" />
+                                                                            </om:Element>
+                                                                            <om:Element Type="MessageRef" OID="8587d678-fab8-4397-88ec-7680a2fb1bc2" ParentLink="Construct_MessageRef" LowerBound="370.63" HigherBound="370.90">
+                                                                                <om:Property Name="Ref" Value="BannirVendeurRequestMessage" />
+                                                                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                                <om:Property Name="Signal" Value="False" />
+                                                                            </om:Element>
+                                                                        </om:Element>
+                                                                        <om:Element Type="Send" OID="1f7f1287-aa38-4d8c-84c4-a83e89964f29" ParentLink="ComplexStatement_Statement" LowerBound="375.1" HigherBound="377.1">
+                                                                            <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                                                                            <om:Property Name="MessageName" Value="BannirVendeurRequestMessage" />
+                                                                            <om:Property Name="OperationName" Value="BannirVendeur" />
+                                                                            <om:Property Name="OperationMessageName" Value="Request" />
+                                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                            <om:Property Name="Name" Value="Envoyer_BannierVendeurRequest" />
+                                                                            <om:Property Name="Signal" Value="True" />
+                                                                        </om:Element>
+                                                                        <om:Element Type="Receive" OID="d9feb763-6164-487a-a315-34c6e7c20e86" ParentLink="ComplexStatement_Statement" LowerBound="377.1" HigherBound="379.1">
+                                                                            <om:Property Name="Activate" Value="False" />
+                                                                            <om:Property Name="PortName" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                                                                            <om:Property Name="MessageName" Value="BannirVendeurResponseMessage" />
+                                                                            <om:Property Name="OperationName" Value="BannirVendeur" />
+                                                                            <om:Property Name="OperationMessageName" Value="Response" />
+                                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                            <om:Property Name="Name" Value="Recevoir_BannirVendeurResponse" />
+                                                                            <om:Property Name="Signal" Value="True" />
+                                                                        </om:Element>
+                                                                    </om:Element>
+                                                                    <om:Element Type="DecisionBranch" OID="625f9f48-5c16-4a61-9227-cd23eca74891" ParentLink="ReallyComplexStatement_Branch">
+                                                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                        <om:Property Name="Name" Value="Sinon" />
+                                                                        <om:Property Name="Signal" Value="False" />
+                                                                        <om:Element Type="Terminate" OID="663e7e91-f26d-4a59-b877-342acdd755f0" ParentLink="ComplexStatement_Statement" LowerBound="382.1" HigherBound="384.1">
+                                                                            <om:Property Name="ErrorMessage" Value="&quot;Processus terminé, évaluation négative non-approuvée&quot;;" />
+                                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                                            <om:Property Name="Name" Value="Terminer_1" />
+                                                                            <om:Property Name="Signal" Value="True" />
+                                                                        </om:Element>
+                                                                    </om:Element>
                                                                 </om:Element>
                                                             </om:Element>
                                                         </om:Element>
                                                     </om:Element>
+                                                    <om:Element Type="DecisionBranch" OID="5359efcf-8be0-445f-a18c-1796d5ff9c36" ParentLink="ReallyComplexStatement_Branch">
+                                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                                        <om:Property Name="Name" Value="Sinon" />
+                                                        <om:Property Name="Signal" Value="False" />
+                                                        <om:Element Type="Terminate" OID="86244547-3539-4b13-b757-1bf35e0269cf" ParentLink="ComplexStatement_Statement" LowerBound="389.1" HigherBound="391.1">
+                                                            <om:Property Name="ErrorMessage" Value="&quot;La sauvegarde des informations de paiement a échouée. Processus terminé.&quot;;" />
+                                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                                            <om:Property Name="Name" Value="Terminer_SauvegarderInfosPaiementEchec" />
+                                                            <om:Property Name="Signal" Value="True" />
+                                                        </om:Element>
+                                                    </om:Element>
                                                 </om:Element>
-                                                <om:Element Type="Receive" OID="e84f3573-c3ee-499a-ab22-00a8987482cb" ParentLink="ListenBranch_Statement" LowerBound="315.1" HigherBound="316.146">
+                                                <om:Element Type="Receive" OID="e84f3573-c3ee-499a-ab22-00a8987482cb" ParentLink="ListenBranch_Statement" LowerBound="324.1" HigherBound="325.146">
                                                     <om:Property Name="Activate" Value="False" />
                                                     <om:Property Name="PortName" Value="PortReception_PaiementFromGagnant" />
                                                     <om:Property Name="MessageName" Value="PaiementMessage" />
@@ -1529,41 +1577,41 @@
                                     </om:Element>
                                 </om:Element>
                             </om:Element>
-                            <om:Element Type="Catch" OID="6136f65a-f80a-459f-8895-e60783cb8b3c" ParentLink="Scope_Catch" LowerBound="381.1" HigherBound="393.1">
+                            <om:Element Type="Catch" OID="6136f65a-f80a-459f-8895-e60783cb8b3c" ParentLink="Scope_Catch" LowerBound="399.1" HigherBound="411.1">
                                 <om:Property Name="ExceptionType" Value="General Exception" />
                                 <om:Property Name="IsFaultMessage" Value="False" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Name" Value="ExceptionIntercepter" />
                                 <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="Construct" OID="d2bf61b2-68ea-47da-ac28-1931d8415f79" ParentLink="Catch_Statement" LowerBound="384.1" HigherBound="390.1">
+                                <om:Element Type="Construct" OID="d2bf61b2-68ea-47da-ac28-1931d8415f79" ParentLink="Catch_Statement" LowerBound="402.1" HigherBound="408.1">
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="ConstruireErreurProcessus" />
                                     <om:Property Name="Signal" Value="True" />
-                                    <om:Element Type="Transform" OID="acdf33f7-4ad7-42af-8aca-9df3a12becef" ParentLink="ComplexStatement_Statement" LowerBound="387.1" HigherBound="389.1">
+                                    <om:Element Type="Transform" OID="acdf33f7-4ad7-42af-8aca-9df3a12becef" ParentLink="ComplexStatement_Statement" LowerBound="405.1" HigherBound="407.1">
                                         <om:Property Name="ClassName" Value="BiztalkEnchereSchemas.MapEnchereToErreurProcessusEnchere" />
                                         <om:Property Name="ReportToAnalyst" Value="True" />
                                         <om:Property Name="Name" Value="Transformer_1" />
                                         <om:Property Name="Signal" Value="True" />
-                                        <om:Element Type="MessagePartRef" OID="db2a5b41-ccaf-4340-80de-7f1920e25946" ParentLink="Transform_InputMessagePartRef" LowerBound="388.135" HigherBound="388.149">
+                                        <om:Element Type="MessagePartRef" OID="db2a5b41-ccaf-4340-80de-7f1920e25946" ParentLink="Transform_InputMessagePartRef" LowerBound="406.135" HigherBound="406.149">
                                             <om:Property Name="MessageRef" Value="EnchereMessage" />
                                             <om:Property Name="ReportToAnalyst" Value="True" />
                                             <om:Property Name="Name" Value="RéférencePartieMessage_15" />
                                             <om:Property Name="Signal" Value="False" />
                                         </om:Element>
-                                        <om:Element Type="MessagePartRef" OID="b23ad4fa-b164-497d-978b-f13a2f5f0c7f" ParentLink="Transform_OutputMessagePartRef" LowerBound="388.44" HigherBound="388.73">
+                                        <om:Element Type="MessagePartRef" OID="b23ad4fa-b164-497d-978b-f13a2f5f0c7f" ParentLink="Transform_OutputMessagePartRef" LowerBound="406.44" HigherBound="406.73">
                                             <om:Property Name="MessageRef" Value="ErreurProcessusEnchereMessage" />
                                             <om:Property Name="ReportToAnalyst" Value="True" />
                                             <om:Property Name="Name" Value="RéférencePartieMessage_16" />
                                             <om:Property Name="Signal" Value="False" />
                                         </om:Element>
                                     </om:Element>
-                                    <om:Element Type="MessageRef" OID="fa020fff-e80d-47fc-9f1e-0a47ed118dc9" ParentLink="Construct_MessageRef" LowerBound="385.39" HigherBound="385.68">
+                                    <om:Element Type="MessageRef" OID="fa020fff-e80d-47fc-9f1e-0a47ed118dc9" ParentLink="Construct_MessageRef" LowerBound="403.39" HigherBound="403.68">
                                         <om:Property Name="Ref" Value="ErreurProcessusEnchereMessage" />
                                         <om:Property Name="ReportToAnalyst" Value="True" />
                                         <om:Property Name="Signal" Value="False" />
                                     </om:Element>
                                 </om:Element>
-                                <om:Element Type="Send" OID="3ab84d8e-6533-43f9-b996-92907bad112c" ParentLink="Catch_Statement" LowerBound="390.1" HigherBound="392.1">
+                                <om:Element Type="Send" OID="3ab84d8e-6533-43f9-b996-92907bad112c" ParentLink="Catch_Statement" LowerBound="408.1" HigherBound="410.1">
                                     <om:Property Name="PortName" Value="PortEnvoi_ErreurProcessusEnchereToLog" />
                                     <om:Property Name="MessageName" Value="ErreurProcessusEnchereMessage" />
                                     <om:Property Name="OperationName" Value="Opération_1" />
@@ -1580,35 +1628,35 @@
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="Sinon" />
                         <om:Property Name="Signal" Value="False" />
-                        <om:Element Type="Construct" OID="2510d009-11dd-42f5-a88c-60322d790111" ParentLink="ComplexStatement_Statement" LowerBound="398.1" HigherBound="404.1">
+                        <om:Element Type="Construct" OID="2510d009-11dd-42f5-a88c-60322d790111" ParentLink="ComplexStatement_Statement" LowerBound="416.1" HigherBound="422.1">
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="Construire_ErreurSauvegarderEnchere" />
                             <om:Property Name="Signal" Value="True" />
-                            <om:Element Type="Transform" OID="ba21d375-621b-4f77-ac91-05aff2e55490" ParentLink="ComplexStatement_Statement" LowerBound="401.1" HigherBound="403.1">
+                            <om:Element Type="Transform" OID="ba21d375-621b-4f77-ac91-05aff2e55490" ParentLink="ComplexStatement_Statement" LowerBound="419.1" HigherBound="421.1">
                                 <om:Property Name="ClassName" Value="BiztalkEnchereSchemas.MapDemandeCreationEnchereToErreurSauvegarderDemandeCreationEnchere" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Name" Value="Transformer_DEmandeCreationEnchereToErreurSauvegarderEnchere" />
                                 <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="MessagePartRef" OID="68e37e7b-6cc6-496c-8b32-1d5dcf4c8a6b" ParentLink="Transform_InputMessagePartRef" LowerBound="402.172" HigherBound="402.201">
+                                <om:Element Type="MessagePartRef" OID="68e37e7b-6cc6-496c-8b32-1d5dcf4c8a6b" ParentLink="Transform_InputMessagePartRef" LowerBound="420.172" HigherBound="420.201">
                                     <om:Property Name="MessageRef" Value="DemandeCreationEnchereMessage" />
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="RéférencePartieMessage_17" />
                                     <om:Property Name="Signal" Value="False" />
                                 </om:Element>
-                                <om:Element Type="MessagePartRef" OID="ce0e59d9-4114-4ae1-b95b-4a237b7cfb7d" ParentLink="Transform_OutputMessagePartRef" LowerBound="402.32" HigherBound="402.78">
+                                <om:Element Type="MessagePartRef" OID="ce0e59d9-4114-4ae1-b95b-4a237b7cfb7d" ParentLink="Transform_OutputMessagePartRef" LowerBound="420.32" HigherBound="420.78">
                                     <om:Property Name="MessageRef" Value="ErreurSauvegarderDemandeCreationEnchereMessage" />
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="RéférencePartieMessage_18" />
                                     <om:Property Name="Signal" Value="False" />
                                 </om:Element>
                             </om:Element>
-                            <om:Element Type="MessageRef" OID="958d0791-36ef-447d-9854-67ca93c9d023" ParentLink="Construct_MessageRef" LowerBound="399.27" HigherBound="399.73">
+                            <om:Element Type="MessageRef" OID="958d0791-36ef-447d-9854-67ca93c9d023" ParentLink="Construct_MessageRef" LowerBound="417.27" HigherBound="417.73">
                                 <om:Property Name="Ref" Value="ErreurSauvegarderDemandeCreationEnchereMessage" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Signal" Value="False" />
                             </om:Element>
                         </om:Element>
-                        <om:Element Type="Send" OID="4df7ad4f-662a-4935-9a29-7c10a23b8e69" ParentLink="ComplexStatement_Statement" LowerBound="404.1" HigherBound="406.1">
+                        <om:Element Type="Send" OID="4df7ad4f-662a-4935-9a29-7c10a23b8e69" ParentLink="ComplexStatement_Statement" LowerBound="422.1" HigherBound="424.1">
                             <om:Property Name="PortName" Value="PortEnvoi_ErreurSauvegarderDemandeCreationEnchereToLog" />
                             <om:Property Name="MessageName" Value="ErreurSauvegarderDemandeCreationEnchereMessage" />
                             <om:Property Name="OperationName" Value="Opération_1" />
@@ -1617,7 +1665,7 @@
                             <om:Property Name="Name" Value="Envoyer_ErreurSauvegarderEnchere" />
                             <om:Property Name="Signal" Value="True" />
                         </om:Element>
-                        <om:Element Type="Terminate" OID="b5e80ba8-b69b-436f-83dd-65ef6ed3b024" ParentLink="ComplexStatement_Statement" LowerBound="406.1" HigherBound="408.1">
+                        <om:Element Type="Terminate" OID="b5e80ba8-b69b-436f-83dd-65ef6ed3b024" ParentLink="ComplexStatement_Statement" LowerBound="424.1" HigherBound="426.1">
                             <om:Property Name="ErrorMessage" Value="&quot;La sauvegarde de l'enchère a échouée&quot;;" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="Terminer_ErreurSauvegarderEnchere" />
@@ -1940,7 +1988,7 @@ module BiztalkEnchereOrchestration
                                 transform (EncherissementGagnantMessage) = BiztalkEnchereOrchestration.Mapper.MapRecupererEncherissementGagnantToEncherissementGagnant (RecupererEncherissementGagnantResponseMessage.RecupererEncherissementGagnantResult);
                             }
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b34616c-f7bd-4e41-a4f5-040c05a809c2")]
-                            if (EncherissementGagnantMessage(BiztalkEnchereSchemas.CommonIdEnchere) == 0 )
+                            if (EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdEnchere) == 0 )
                             {
                                 [Microsoft.XLANGs.BaseTypes.DesignerPosition("a183f41b-5751-4959-a0c3-c67d8688ebef")]
                                 send (PortEnvoi_CourrielAucunGagnantToVendeur.Opération_1, EnchereMessage, CommonIdUtilisateur_Vendeur_CorrelationSet);
@@ -1957,7 +2005,7 @@ module BiztalkEnchereOrchestration
                                 listen
                                 {
                                     [Microsoft.XLANGs.BaseTypes.DesignerPosition("6547ab56-016a-4245-848f-d8ab59331979")]
-                                    timeout new System.TimeSpan(24, 0, 0)
+                                    timeout new System.TimeSpan(0, 0, 30)
                                     {
                                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("af88ed22-274c-4169-978f-a225b5b1e2ad")]
                                         construct BannirEncherisseurGagnantRequestMessage
@@ -1969,16 +2017,25 @@ module BiztalkEnchereOrchestration
                                         send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.BannirEncherisseurGagnant, BannirEncherisseurGagnantRequestMessage);
                                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("ec74f9df-e649-4072-81c6-59fef7dd9dd6")]
                                         receive (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.BannirEncherisseurGagnant, BannirEncherisseurGagnantResponseMessage);
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4aa644a4-70f4-456a-adb5-0062e938f687")]
-                                        construct CourrielUtilisateurBanniMessage
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e1844935-b2e0-4fd6-8315-1e37e69f679b")]
+                                        if (BannirEncherisseurGagnantResponseMessage.BannirEncherisseurGagnantResult == true)
                                         {
-                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2260d4a-481b-4f35-b1a2-b502d159a325")]
-                                            transform (CourrielUtilisateurBanniMessage) = BiztalkEnchereOrchestration.Mapper.MapEncherissementGagnantToCourrielUtilisateurBanni (EncherissementGagnantMessage);
-                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b890cfa6-d4e3-4033-8c15-31d9026e52a4")]
-                                            CourrielUtilisateurBanniMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere) = EnchereMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4aa644a4-70f4-456a-adb5-0062e938f687")]
+                                            construct CourrielUtilisateurBanniMessage
+                                            {
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2260d4a-481b-4f35-b1a2-b502d159a325")]
+                                                transform (CourrielUtilisateurBanniMessage) = BiztalkEnchereOrchestration.Mapper.MapEncherissementGagnantToCourrielUtilisateurBanni (EncherissementGagnantMessage);
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b890cfa6-d4e3-4033-8c15-31d9026e52a4")]
+                                                CourrielUtilisateurBanniMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere) = EnchereMessage(BiztalkEnchereSchemas.PropertySchema.NomEnchere);
+                                            }
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c51d3ccf-14fb-455a-9c6e-fd601920975c")]
+                                            send (PortEnvoi_CourrielUtilisateurBanniToGagnant.Opération_1, CourrielUtilisateurBanniMessage);
                                         }
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c51d3ccf-14fb-455a-9c6e-fd601920975c")]
-                                        send (PortEnvoi_CourrielUtilisateurBanniToGagnant.Opération_1, CourrielUtilisateurBanniMessage);
+                                        else 
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d66257af-ddbd-4705-89bf-e76f7d7f44d4")]
+                                            terminate "Bannir l'enchérisseur gagnant a échoué. Processus terminé.";;
+                                        }
                                     }
                                     [Microsoft.XLANGs.BaseTypes.DesignerPosition("e84f3573-c3ee-499a-ab22-00a8987482cb")]
                                     until receive (PortReception_PaiementFromGagnant.Opération_1, PaiementMessage, CommonIdEnchere_CorelationSet)
@@ -1993,51 +2050,60 @@ module BiztalkEnchereOrchestration
                                         send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderInfosPaiement, SauvegarderPaiementRequestMessage);
                                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("0fed48d0-f062-411d-9cd1-5f59b51cdc24")]
                                         receive (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderInfosPaiement, SauvegarderPaiementResponseMessage);
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd16c19f-a326-4ee6-ad3c-8bf5804ff3e5")]
-                                        send (PortEnvoi_CourrielDemanderEvaluationTransactionToGagnant.Opération_1, EncherissementGagnantMessage, CommonIdEnchere_CorelationSet);
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("637e485a-966c-4632-851c-c52d4b547e4e")]
-                                        receive (PortReception_EvaluationTransactionFromGagnant.Opération_1, EvaluationTransactionMessage, CommonIdEnchere_CorelationSet);
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3bd06aba-eda1-4501-95d5-23c4f0259a65")]
-                                        construct SauvegarderEvaluationRequestMessage
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3e2d7758-09b9-4087-b2ce-a5fb5fd0d508")]
+                                        if (SauvegarderPaiementResponseMessage.SauvegarderInfosPaiementResult == true)
                                         {
-                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e4e83dd3-280b-4d68-aef0-f8a2fc8f2cf6")]
-                                            transform (SauvegarderEvaluationRequestMessage.pEvaluation) = BiztalkEnchereOrchestration.Mapper.MapEvaluationTransactionToSauvegarderEvaluationRequest (EvaluationTransactionMessage);
-                                        }
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("275d946c-232b-48cc-9750-108ef4212055")]
-                                        send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderEvaluation, SauvegarderEvaluationRequestMessage);
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8f53aafa-087e-44d6-8937-3158dd6772c7")]
-                                        receive (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderEvaluation, SauvegarderEvaluationResponseMessage);
-                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d25186d4-43c4-4d8a-a0e1-83d2015cb148")]
-                                        if (EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.EvaluationGlobale) == true)
-                                        {
-                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("34e54bda-6f9f-4351-ad3d-a366f7edff19")]
-                                            terminate "Le processus d'enchère est terminé, l'évaluation reçu est positive.";;
-                                        }
-                                        else 
-                                        {
-                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dc2e849e-6e1b-4736-a511-568f845bf533")]
-                                            send (PortEnvoi_EvaluationTransactionToAgent.Opération_1, EvaluationTransactionMessage, CommonIdEnchere_CorelationSet);
-                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c3ceafa-40aa-4446-87f2-21bc5cf65759")]
-                                            receive (PortReception_EvaluationTransactionFromAgent.Opération_1, EvaluationTransactionMessage, CommonIdEnchere_CorelationSet);
-                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("377facfe-8f35-4bbe-bbcc-43a0e8b4e4d1")]
-                                            if (EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.Approuvee) == true)
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd16c19f-a326-4ee6-ad3c-8bf5804ff3e5")]
+                                            send (PortEnvoi_CourrielDemanderEvaluationTransactionToGagnant.Opération_1, EncherissementGagnantMessage, CommonIdEnchere_CorelationSet);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("637e485a-966c-4632-851c-c52d4b547e4e")]
+                                            receive (PortReception_EvaluationTransactionFromGagnant.Opération_1, EvaluationTransactionMessage, CommonIdEnchere_CorelationSet);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3bd06aba-eda1-4501-95d5-23c4f0259a65")]
+                                            construct SauvegarderEvaluationRequestMessage
                                             {
-                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7f47962c-76e3-42aa-bc20-385c0a268d0f")]
-                                                construct BannirVendeurRequestMessage
-                                                {
-                                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("45ee75ea-29c9-4e89-8eae-e8b1254cdbc0")]
-                                                    BannirVendeurRequestMessage.pIdUtilisateur_Vendeur = CommonIdUtilisateur_Vendeur_CorrelationSet(BiztalkEnchereSchemas.CommonIdUtilisateur_Vendeur);
-                                                }
-                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1f7f1287-aa38-4d8c-84c4-a83e89964f29")]
-                                                send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.BannirVendeur, BannirVendeurRequestMessage);
-                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9feb763-6164-487a-a315-34c6e7c20e86")]
-                                                receive (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.BannirVendeur, BannirVendeurResponseMessage);
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e4e83dd3-280b-4d68-aef0-f8a2fc8f2cf6")]
+                                                transform (SauvegarderEvaluationRequestMessage.pEvaluation) = BiztalkEnchereOrchestration.Mapper.MapEvaluationTransactionToSauvegarderEvaluationRequest (EvaluationTransactionMessage);
+                                            }
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("275d946c-232b-48cc-9750-108ef4212055")]
+                                            send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderEvaluation, SauvegarderEvaluationRequestMessage);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8f53aafa-087e-44d6-8937-3158dd6772c7")]
+                                            receive (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.SauvegarderEvaluation, SauvegarderEvaluationResponseMessage);
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d25186d4-43c4-4d8a-a0e1-83d2015cb148")]
+                                            if (EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.EvaluationGlobale) == true)
+                                            {
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("34e54bda-6f9f-4351-ad3d-a366f7edff19")]
+                                                terminate "Le processus d'enchère est terminé, l'évaluation reçu est positive.";;
                                             }
                                             else 
                                             {
-                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("663e7e91-f26d-4a59-b877-342acdd755f0")]
-                                                terminate "Processus terminé, évaluation négative non-approuvée";;
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("dc2e849e-6e1b-4736-a511-568f845bf533")]
+                                                send (PortEnvoi_EvaluationTransactionToAgent.Opération_1, EvaluationTransactionMessage, CommonIdEnchere_CorelationSet);
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c3ceafa-40aa-4446-87f2-21bc5cf65759")]
+                                                receive (PortReception_EvaluationTransactionFromAgent.Opération_1, EvaluationTransactionMessage, CommonIdEnchere_CorelationSet);
+                                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("377facfe-8f35-4bbe-bbcc-43a0e8b4e4d1")]
+                                                if (EvaluationTransactionMessage(BiztalkEnchereSchemas.PropertySchema.Approuvee) == true)
+                                                {
+                                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7f47962c-76e3-42aa-bc20-385c0a268d0f")]
+                                                    construct BannirVendeurRequestMessage
+                                                    {
+                                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("45ee75ea-29c9-4e89-8eae-e8b1254cdbc0")]
+                                                        BannirVendeurRequestMessage.pIdUtilisateur_Vendeur = CommonIdUtilisateur_Vendeur_CorrelationSet(BiztalkEnchereSchemas.CommonIdUtilisateur_Vendeur);
+                                                    }
+                                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1f7f1287-aa38-4d8c-84c4-a83e89964f29")]
+                                                    send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.BannirVendeur, BannirVendeurRequestMessage);
+                                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9feb763-6164-487a-a315-34c6e7c20e86")]
+                                                    receive (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.BannirVendeur, BannirVendeurResponseMessage);
+                                                }
+                                                else 
+                                                {
+                                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("663e7e91-f26d-4a59-b877-342acdd755f0")]
+                                                    terminate "Processus terminé, évaluation négative non-approuvée";;
+                                                }
                                             }
+                                        }
+                                        else 
+                                        {
+                                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("86244547-3539-4b13-b757-1bf35e0269cf")]
+                                            terminate "La sauvegarde des informations de paiement a échouée. Processus terminé.";;
                                         }
                                     }
                                 }
