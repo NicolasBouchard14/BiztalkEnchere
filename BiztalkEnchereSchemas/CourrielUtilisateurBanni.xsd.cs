@@ -40,7 +40,7 @@ namespace BiztalkEnchereSchemas {
       <xs:sequence>
         <xs:element default=""Vous avez été bannis car vous n'avez pas payé l'enchère dans un délai de 24 heures!"" name=""Message"" type=""xs:string"" />
         <xs:element name=""NomUtilisateur"" type=""xs:string"" />
-        <xs:element name=""NomEnchere"" type=""xs:string"" />
+        <xs:element default=""&quot;Enchere&quot;"" name=""NomEnchere"" type=""xs:string"" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -7,7 +7,7 @@ namespace BiztalkEnchereSchemas.PropertySchema {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Property)]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"Duree", @"Message", @"NomEnchere", @"EvaluationGlobale", @"Approuvee", @"IdEnchere"})]
+    [SchemaRoots(new string[] {@"Duree", @"Message", @"NomEnchere", @"EvaluationGlobale", @"Approuvee", @"IdEnchere", @"IdUtilisateur_EncherisseurGagnant"})]
     public sealed class PropertySchema : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -63,6 +63,13 @@ namespace BiztalkEnchereSchemas.PropertySchema {
       </xs:appinfo>
     </xs:annotation>
   </xs:element>
+  <xs:element name=""IdUtilisateur_EncherisseurGagnant"" type=""xs:int"">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid=""c91faf0e-add9-4820-846b-8e8f3be96dbe"" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
 </xs:schema>";
         
         public PropertySchema() {
@@ -76,13 +83,14 @@ namespace BiztalkEnchereSchemas.PropertySchema {
         
         public override string[] RootNodes {
             get {
-                string[] _RootElements = new string [6];
+                string[] _RootElements = new string [7];
                 _RootElements[0] = "Duree";
                 _RootElements[1] = "Message";
                 _RootElements[2] = "NomEnchere";
                 _RootElements[3] = "EvaluationGlobale";
                 _RootElements[4] = "Approuvee";
                 _RootElements[5] = "IdEnchere";
+                _RootElements[6] = "IdUtilisateur_EncherisseurGagnant";
                 return _RootElements;
             }
         }
@@ -257,6 +265,36 @@ namespace BiztalkEnchereSchemas.PropertySchema {
         
         [System.NonSerializedAttribute()]
         private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"IdEnchere", @"https://BiztalkEnchereSchemas.PropertySchema");
+        
+        private static int PropertyValueType {
+            get {
+                throw new System.NotSupportedException();
+            }
+        }
+        
+        public override System.Xml.XmlQualifiedName Name {
+            get {
+                return _QName;
+            }
+        }
+        
+        public override System.Type Type {
+            get {
+                return typeof(int);
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [System.SerializableAttribute()]
+    [PropertyType(@"IdUtilisateur_EncherisseurGagnant",@"https://BiztalkEnchereSchemas.PropertySchema","int","System.Int32")]
+    [PropertyGuidAttribute(@"c91faf0e-add9-4820-846b-8e8f3be96dbe")]
+    public sealed class IdUtilisateur_EncherisseurGagnant : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+        
+        [System.NonSerializedAttribute()]
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"IdUtilisateur_EncherisseurGagnant", @"https://BiztalkEnchereSchemas.PropertySchema");
         
         private static int PropertyValueType {
             get {

@@ -2,7 +2,7 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="2837c7e1-acdd-4df9-bbc9-9258edb04edb" LowerBound="1.1" HigherBound="430.1">
+    <om:Element Type="Module" OID="2837c7e1-acdd-4df9-bbc9-9258edb04edb" LowerBound="1.1" HigherBound="432.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="BiztalkEnchereOrchestration" />
         <om:Property Name="Signal" Value="False" />
@@ -310,13 +310,22 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="ServiceDeclaration" OID="269bfa15-0248-4a13-981e-ba6a2919f1a0" ParentLink="Module_ServiceDeclaration" LowerBound="128.1" HigherBound="429.1">
+        <om:Element Type="ServiceDeclaration" OID="269bfa15-0248-4a13-981e-ba6a2919f1a0" ParentLink="Module_ServiceDeclaration" LowerBound="128.1" HigherBound="431.1">
             <om:Property Name="InitializedTransactionType" Value="True" />
             <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="ProcessusEnchere" />
             <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="9582cf45-daf9-4062-9feb-e2f8cc32a303" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="187.1" HigherBound="188.1">
+                <om:Property Name="InitialValue" Value="false" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EnchereTerminee" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
             <om:Element Type="CorrelationDeclaration" OID="ea5c9d94-6e78-40df-aac1-7157d3278962" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="161.1" HigherBound="162.1">
                 <om:Property Name="Type" Value="BiztalkEnchereOrchestration.CommonIdEnchere" />
                 <om:Property Name="ParamDirection" Value="In" />
@@ -435,260 +444,6 @@
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="CommonIdUtilisateur_EncherisseurGagnant_CorrelationSet" />
                 <om:Property Name="Signal" Value="True" />
-            </om:Element>
-            <om:Element Type="VariableDeclaration" OID="9582cf45-daf9-4062-9feb-e2f8cc32a303" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="187.1" HigherBound="188.1">
-                <om:Property Name="InitialValue" Value="false" />
-                <om:Property Name="UseDefaultConstructor" Value="False" />
-                <om:Property Name="Type" Value="System.Boolean" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="EnchereTerminee" />
-                <om:Property Name="Signal" Value="True" />
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="f1a5d2ae-15dd-44d1-9cf7-0ebd13e86bec" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="131.1" HigherBound="133.1">
-                <om:Property Name="PortModifier" Value="Implements" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="4" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_DemandeCreationEnchere" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortReception_DemandeCreationEnchereFromVendeur" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="74045a3c-243d-4499-92fb-a78de7c87931" ParentLink="PortDeclaration_CLRAttribute" LowerBound="131.1" HigherBound="132.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="5c911e65-36ea-474e-9c9d-8a2fec19ac68" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="133.1" HigherBound="135.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="22" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_Enchere" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_Enchere" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="24d0a4be-ae8b-4db0-b51c-2e2d9236d0b9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="133.1" HigherBound="134.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="6b3db572-0e5b-4c6a-923d-22b7d6b48b7a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="135.1" HigherBound="137.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="84" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortTypeEnvoi_CourrielVendeur_EnchereTerminee" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_CourrielAucunGagnantToVendeur" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="74314bea-4a97-4891-8f66-65c65b163c29" ParentLink="PortDeclaration_CLRAttribute" LowerBound="135.1" HigherBound="136.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="4c25750b-6acb-463c-8c5c-4a81b605a840" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="137.1" HigherBound="139.1">
-                <om:Property Name="PortModifier" Value="Implements" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="149" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_Paiement" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortReception_PaiementFromGagnant" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="21cb6164-64bb-46f2-9a48-279588b226e2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="137.1" HigherBound="138.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="6a60133f-9832-476c-a65d-c00e9623773a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="139.1" HigherBound="141.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="140" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielGagnantDemanderPaiement" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_CourrielDemanderPaiementToGagnant" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="81fd2a1d-eddb-4837-93c7-d42329d40b00" ParentLink="PortDeclaration_CLRAttribute" LowerBound="139.1" HigherBound="140.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="9da95158-cd8a-4106-9f13-fe938a744abe" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="141.1" HigherBound="143.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="137" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielVendeurEncherissementGagnant" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_CourrielEncherissementGagnantToVendeur" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="f692346a-4a9b-4cbc-ae19-991d45609358" ParentLink="PortDeclaration_CLRAttribute" LowerBound="141.1" HigherBound="142.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="81c62633-3faa-4c58-8d2e-524a3fe8b4a7" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="143.1" HigherBound="145.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="163" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielUtilisateurBanni" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_CourrielUtilisateurBanniToGagnant" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="205b29cc-eb77-4dc8-9f7b-9d3a23a08e11" ParentLink="PortDeclaration_CLRAttribute" LowerBound="143.1" HigherBound="144.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="ec1f95d7-de24-4b0a-b895-210719530bab" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="145.1" HigherBound="147.1">
-                <om:Property Name="PortModifier" Value="Implements" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="175" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_EvaluationTransaction" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortReception_EvaluationTransactionFromGagnant" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="8ef2df40-2db3-4518-acda-eaf8967362ce" ParentLink="PortDeclaration_CLRAttribute" LowerBound="145.1" HigherBound="146.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="a7ae7489-26ee-4687-8914-395ddee355cf" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="147.1" HigherBound="149.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="174" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielDemanderEvaluationTransaction" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_CourrielDemanderEvaluationTransactionToGagnant" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="4ab1e356-d57b-45c3-9f36-281ec9a2acb0" ParentLink="PortDeclaration_CLRAttribute" LowerBound="147.1" HigherBound="148.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="dff00eb0-11d8-4528-831f-f683fe9a1e2a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="149.1" HigherBound="151.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="36" />
-                <om:Property Name="IsWebPort" Value="True" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_.ServiceEnchere_NB" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
-                <om:Property Name="Signal" Value="False" />
-                <om:Element Type="PhysicalBindingAttribute" OID="73d3e562-fcdc-4742-b528-c76980216452" ParentLink="PortDeclaration_CLRAttribute" LowerBound="149.1" HigherBound="150.1">
-                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruReceive" />
-                    <om:Property Name="OutPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" />
-                    <om:Property Name="TransportType" Value="SOAP" />
-                    <om:Property Name="URI" Value="http://localhost:55661/ServiceEnchere_NB.asmx" />
-                    <om:Property Name="IsDynamic" Value="False" />
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="57dfa598-e8fd-4719-bb42-28ed31eb9e2e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="151.1" HigherBound="153.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="214" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_AffecterTransactionAgent" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_EvaluationTransactionToAgent" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="5fe8f849-7384-4ba6-9bd6-6bcff8e9c4ca" ParentLink="PortDeclaration_CLRAttribute" LowerBound="151.1" HigherBound="152.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="854830c4-f40d-4327-aa59-d9361c88ff96" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="153.1" HigherBound="155.1">
-                <om:Property Name="PortModifier" Value="Implements" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="215" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_EvaluationTransactionFromAgent" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortReception_EvaluationTransactionFromAgent" />
-                <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="a1188dec-0ac7-48d9-9c4b-9f4f930ba2fa" ParentLink="PortDeclaration_CLRAttribute" LowerBound="153.1" HigherBound="154.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="f484fea0-1fa5-4cd1-92c6-d91a8dbc60a9" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="155.1" HigherBound="157.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Left" />
-                <om:Property Name="PortIndex" Value="272" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_ErreurProcessusEnchereToLog" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_ErreurProcessusEnchereToLog" />
-                <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="9fd9aea8-8282-4260-b2a3-54aca77b334e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="155.1" HigherBound="156.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="76649c20-f857-4259-b469-f5bb8416e0e0" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="157.1" HigherBound="159.1">
-                <om:Property Name="PortModifier" Value="Uses" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="50" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_ErreurSauvegarderDemandeCreationEnchere" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortEnvoi_ErreurSauvegarderDemandeCreationEnchereToLog" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="71204df5-2306-4f4d-af75-abe1004e3ac0" ParentLink="PortDeclaration_CLRAttribute" LowerBound="157.1" HigherBound="158.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
-            </om:Element>
-            <om:Element Type="PortDeclaration" OID="04f29722-efd9-4b3c-a8af-2e6a1ef0152c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="159.1" HigherBound="161.1">
-                <om:Property Name="PortModifier" Value="Implements" />
-                <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="52" />
-                <om:Property Name="IsWebPort" Value="False" />
-                <om:Property Name="OrderedDelivery" Value="False" />
-                <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_Encherissement" />
-                <om:Property Name="ParamDirection" Value="In" />
-                <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="PortReception_EncherissementFromEncherisseur" />
-                <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="625f0d87-1a10-480f-a69d-6530ffd3e96d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="159.1" HigherBound="160.1">
-                    <om:Property Name="Signal" Value="False" />
-                </om:Element>
             </om:Element>
             <om:Element Type="MessageDeclaration" OID="81264f22-038b-45b3-86dc-b0b9d199254c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="164.1" HigherBound="165.1">
                 <om:Property Name="Type" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_.SauvegarderDemandeCreationEnchere_response" />
@@ -940,17 +695,17 @@
                         <om:Property Name="Signal" Value="False" />
                     </om:Element>
                 </om:Element>
-                <om:Element Type="Decision" OID="7be1b91b-7a09-4ead-aeb7-b9cc69007d9c" ParentLink="ServiceBody_Statement" LowerBound="209.1" HigherBound="427.1">
+                <om:Element Type="Decision" OID="7be1b91b-7a09-4ead-aeb7-b9cc69007d9c" ParentLink="ServiceBody_Statement" LowerBound="209.1" HigherBound="429.1">
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Sauvegarde enchère réussie ?" />
                     <om:Property Name="Signal" Value="True" />
-                    <om:Element Type="DecisionBranch" OID="cf854e38-7c46-424b-bf07-8a05c43fdaf4" ParentLink="ReallyComplexStatement_Branch" LowerBound="210.13" HigherBound="414.1">
+                    <om:Element Type="DecisionBranch" OID="cf854e38-7c46-424b-bf07-8a05c43fdaf4" ParentLink="ReallyComplexStatement_Branch" LowerBound="210.13" HigherBound="416.1">
                         <om:Property Name="Expression" Value="EnchereMessage(BiztalkEnchereSchemas.CommonIdEnchere) != 0" />
                         <om:Property Name="IsGhostBranch" Value="True" />
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="Oui" />
                         <om:Property Name="Signal" Value="False" />
-                        <om:Element Type="Scope" OID="e8787914-4abe-4f2d-b2bf-2b64626c4dde" ParentLink="ComplexStatement_Statement" LowerBound="212.1" HigherBound="413.1">
+                        <om:Element Type="Scope" OID="e8787914-4abe-4f2d-b2bf-2b64626c4dde" ParentLink="ComplexStatement_Statement" LowerBound="212.1" HigherBound="415.1">
                             <om:Property Name="InitializedTransactionType" Value="True" />
                             <om:Property Name="IsSynchronized" Value="False" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
@@ -994,7 +749,7 @@
                                         <om:Element Type="Delay" OID="fe68f818-7629-4a35-b0fa-83b59b963e45" ParentLink="ListenBranch_Statement" LowerBound="227.1" HigherBound="228.163">
                                             <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,System.Convert.ToInt32(DemandeCreationEnchereMessage(BiztalkEnchereSchemas.PropertySchema.Duree)))" />
                                             <om:Property Name="ReportToAnalyst" Value="True" />
-                                            <om:Property Name="Name" Value="Délai_1" />
+                                            <om:Property Name="Name" Value="Délai_DureeEnchere" />
                                             <om:Property Name="Signal" Value="True" />
                                         </om:Element>
                                     </om:Element>
@@ -1154,11 +909,11 @@
                                     <om:Property Name="Name" Value="Vérifier s'il y a un gagnant" />
                                     <om:Property Name="Signal" Value="True" />
                                     <om:Element Type="DecisionBranch" OID="56e85a00-e041-4217-887e-ee7267d49dce" ParentLink="ReallyComplexStatement_Branch" LowerBound="275.29" HigherBound="282.1">
-                                        <om:Property Name="Expression" Value="EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdEnchere) == 0 " />
+                                        <om:Property Name="Expression" Value="EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdEnchere) == 0" />
                                         <om:Property Name="IsGhostBranch" Value="True" />
                                         <om:Property Name="ReportToAnalyst" Value="True" />
                                         <om:Property Name="Name" Value="PasDeGagnant" />
-                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
                                         <om:Element Type="Send" OID="a183f41b-5751-4959-a0c3-c67d8688ebef" ParentLink="ComplexStatement_Statement" LowerBound="277.1" HigherBound="279.1">
                                             <om:Property Name="PortName" Value="PortEnvoi_CourrielAucunGagnantToVendeur" />
                                             <om:Property Name="MessageName" Value="EnchereMessage" />
@@ -1212,7 +967,7 @@
                                                     <om:Property Name="Name" Value="ConstructBannirEncherisseurGagnant" />
                                                     <om:Property Name="Signal" Value="True" />
                                                     <om:Element Type="MessageAssignment" OID="403fa46a-064a-42f9-9dd1-5a957b322ad2" ParentLink="ComplexStatement_Statement" LowerBound="297.1" HigherBound="299.1">
-                                                        <om:Property Name="Expression" Value="BannirEncherisseurGagnantRequestMessage.pIdUtilisateur_EncherisseurGagnant = CommonIdEnchere_CorelationSet(BiztalkEnchereSchemas.CommonIdEnchere);" />
+                                                        <om:Property Name="Expression" Value="BannirEncherisseurGagnantRequestMessage.pIdUtilisateur_EncherisseurGagnant = EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdUtilisateur_EncherisseurGagnant);" />
                                                         <om:Property Name="ReportToAnalyst" Value="False" />
                                                         <om:Property Name="Name" Value="AssignationBannirEncherisseurGagnantRequest" />
                                                         <om:Property Name="Signal" Value="False" />
@@ -1577,7 +1332,7 @@
                                     </om:Element>
                                 </om:Element>
                             </om:Element>
-                            <om:Element Type="Catch" OID="6136f65a-f80a-459f-8895-e60783cb8b3c" ParentLink="Scope_Catch" LowerBound="399.1" HigherBound="411.1">
+                            <om:Element Type="Catch" OID="6136f65a-f80a-459f-8895-e60783cb8b3c" ParentLink="Scope_Catch" LowerBound="399.1" HigherBound="413.1">
                                 <om:Property Name="ExceptionType" Value="General Exception" />
                                 <om:Property Name="IsFaultMessage" Value="False" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
@@ -1620,6 +1375,12 @@
                                     <om:Property Name="Name" Value="Envoyer_ErreurProcessusEnchere" />
                                     <om:Property Name="Signal" Value="True" />
                                 </om:Element>
+                                <om:Element Type="Suspend" OID="91bd984b-54c4-453a-a908-98801b68714e" ParentLink="Catch_Statement" LowerBound="410.1" HigherBound="412.1">
+                                    <om:Property Name="ErrorMessage" Value="&quot;Exception levée, processus en pause&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Interrompre_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
                             </om:Element>
                         </om:Element>
                     </om:Element>
@@ -1628,35 +1389,35 @@
                         <om:Property Name="ReportToAnalyst" Value="True" />
                         <om:Property Name="Name" Value="Sinon" />
                         <om:Property Name="Signal" Value="False" />
-                        <om:Element Type="Construct" OID="2510d009-11dd-42f5-a88c-60322d790111" ParentLink="ComplexStatement_Statement" LowerBound="416.1" HigherBound="422.1">
+                        <om:Element Type="Construct" OID="2510d009-11dd-42f5-a88c-60322d790111" ParentLink="ComplexStatement_Statement" LowerBound="418.1" HigherBound="424.1">
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="Construire_ErreurSauvegarderEnchere" />
                             <om:Property Name="Signal" Value="True" />
-                            <om:Element Type="Transform" OID="ba21d375-621b-4f77-ac91-05aff2e55490" ParentLink="ComplexStatement_Statement" LowerBound="419.1" HigherBound="421.1">
+                            <om:Element Type="Transform" OID="ba21d375-621b-4f77-ac91-05aff2e55490" ParentLink="ComplexStatement_Statement" LowerBound="421.1" HigherBound="423.1">
                                 <om:Property Name="ClassName" Value="BiztalkEnchereSchemas.MapDemandeCreationEnchereToErreurSauvegarderDemandeCreationEnchere" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Name" Value="Transformer_DEmandeCreationEnchereToErreurSauvegarderEnchere" />
                                 <om:Property Name="Signal" Value="True" />
-                                <om:Element Type="MessagePartRef" OID="68e37e7b-6cc6-496c-8b32-1d5dcf4c8a6b" ParentLink="Transform_InputMessagePartRef" LowerBound="420.172" HigherBound="420.201">
+                                <om:Element Type="MessagePartRef" OID="68e37e7b-6cc6-496c-8b32-1d5dcf4c8a6b" ParentLink="Transform_InputMessagePartRef" LowerBound="422.172" HigherBound="422.201">
                                     <om:Property Name="MessageRef" Value="DemandeCreationEnchereMessage" />
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="RéférencePartieMessage_17" />
                                     <om:Property Name="Signal" Value="False" />
                                 </om:Element>
-                                <om:Element Type="MessagePartRef" OID="ce0e59d9-4114-4ae1-b95b-4a237b7cfb7d" ParentLink="Transform_OutputMessagePartRef" LowerBound="420.32" HigherBound="420.78">
+                                <om:Element Type="MessagePartRef" OID="ce0e59d9-4114-4ae1-b95b-4a237b7cfb7d" ParentLink="Transform_OutputMessagePartRef" LowerBound="422.32" HigherBound="422.78">
                                     <om:Property Name="MessageRef" Value="ErreurSauvegarderDemandeCreationEnchereMessage" />
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="RéférencePartieMessage_18" />
                                     <om:Property Name="Signal" Value="False" />
                                 </om:Element>
                             </om:Element>
-                            <om:Element Type="MessageRef" OID="958d0791-36ef-447d-9854-67ca93c9d023" ParentLink="Construct_MessageRef" LowerBound="417.27" HigherBound="417.73">
+                            <om:Element Type="MessageRef" OID="958d0791-36ef-447d-9854-67ca93c9d023" ParentLink="Construct_MessageRef" LowerBound="419.27" HigherBound="419.73">
                                 <om:Property Name="Ref" Value="ErreurSauvegarderDemandeCreationEnchereMessage" />
                                 <om:Property Name="ReportToAnalyst" Value="True" />
                                 <om:Property Name="Signal" Value="False" />
                             </om:Element>
                         </om:Element>
-                        <om:Element Type="Send" OID="4df7ad4f-662a-4935-9a29-7c10a23b8e69" ParentLink="ComplexStatement_Statement" LowerBound="422.1" HigherBound="424.1">
+                        <om:Element Type="Send" OID="4df7ad4f-662a-4935-9a29-7c10a23b8e69" ParentLink="ComplexStatement_Statement" LowerBound="424.1" HigherBound="426.1">
                             <om:Property Name="PortName" Value="PortEnvoi_ErreurSauvegarderDemandeCreationEnchereToLog" />
                             <om:Property Name="MessageName" Value="ErreurSauvegarderDemandeCreationEnchereMessage" />
                             <om:Property Name="OperationName" Value="Opération_1" />
@@ -1665,13 +1426,258 @@
                             <om:Property Name="Name" Value="Envoyer_ErreurSauvegarderEnchere" />
                             <om:Property Name="Signal" Value="True" />
                         </om:Element>
-                        <om:Element Type="Terminate" OID="b5e80ba8-b69b-436f-83dd-65ef6ed3b024" ParentLink="ComplexStatement_Statement" LowerBound="424.1" HigherBound="426.1">
+                        <om:Element Type="Terminate" OID="b5e80ba8-b69b-436f-83dd-65ef6ed3b024" ParentLink="ComplexStatement_Statement" LowerBound="426.1" HigherBound="428.1">
                             <om:Property Name="ErrorMessage" Value="&quot;La sauvegarde de l'enchère a échouée&quot;;" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="Terminer_ErreurSauvegarderEnchere" />
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
                     </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f1a5d2ae-15dd-44d1-9cf7-0ebd13e86bec" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="131.1" HigherBound="133.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="4" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_DemandeCreationEnchere" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortReception_DemandeCreationEnchereFromVendeur" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="74045a3c-243d-4499-92fb-a78de7c87931" ParentLink="PortDeclaration_CLRAttribute" LowerBound="131.1" HigherBound="132.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="5c911e65-36ea-474e-9c9d-8a2fec19ac68" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="133.1" HigherBound="135.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="22" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_Enchere" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_Enchere" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="24d0a4be-ae8b-4db0-b51c-2e2d9236d0b9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="133.1" HigherBound="134.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6b3db572-0e5b-4c6a-923d-22b7d6b48b7a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="135.1" HigherBound="137.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="84" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortTypeEnvoi_CourrielVendeur_EnchereTerminee" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_CourrielAucunGagnantToVendeur" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="74314bea-4a97-4891-8f66-65c65b163c29" ParentLink="PortDeclaration_CLRAttribute" LowerBound="135.1" HigherBound="136.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4c25750b-6acb-463c-8c5c-4a81b605a840" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="137.1" HigherBound="139.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="149" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_Paiement" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortReception_PaiementFromGagnant" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="21cb6164-64bb-46f2-9a48-279588b226e2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="137.1" HigherBound="138.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6a60133f-9832-476c-a65d-c00e9623773a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="139.1" HigherBound="141.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="140" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielGagnantDemanderPaiement" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_CourrielDemanderPaiementToGagnant" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="81fd2a1d-eddb-4837-93c7-d42329d40b00" ParentLink="PortDeclaration_CLRAttribute" LowerBound="139.1" HigherBound="140.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9da95158-cd8a-4106-9f13-fe938a744abe" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="141.1" HigherBound="143.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="137" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielVendeurEncherissementGagnant" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_CourrielEncherissementGagnantToVendeur" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="f692346a-4a9b-4cbc-ae19-991d45609358" ParentLink="PortDeclaration_CLRAttribute" LowerBound="141.1" HigherBound="142.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="81c62633-3faa-4c58-8d2e-524a3fe8b4a7" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="143.1" HigherBound="145.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="163" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielUtilisateurBanni" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_CourrielUtilisateurBanniToGagnant" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="205b29cc-eb77-4dc8-9f7b-9d3a23a08e11" ParentLink="PortDeclaration_CLRAttribute" LowerBound="143.1" HigherBound="144.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ec1f95d7-de24-4b0a-b895-210719530bab" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="145.1" HigherBound="147.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="175" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_EvaluationTransaction" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortReception_EvaluationTransactionFromGagnant" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="8ef2df40-2db3-4518-acda-eaf8967362ce" ParentLink="PortDeclaration_CLRAttribute" LowerBound="145.1" HigherBound="146.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a7ae7489-26ee-4687-8914-395ddee355cf" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="147.1" HigherBound="149.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="174" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_CourrielDemanderEvaluationTransaction" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_CourrielDemanderEvaluationTransactionToGagnant" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="4ab1e356-d57b-45c3-9f36-281ec9a2acb0" ParentLink="PortDeclaration_CLRAttribute" LowerBound="147.1" HigherBound="148.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="dff00eb0-11d8-4528-831f-f683fe9a1e2a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="149.1" HigherBound="151.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="36" />
+                <om:Property Name="IsWebPort" Value="True" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_.ServiceEnchere_NB" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_SauvegarderDemandeCreationEnchereRequest" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PhysicalBindingAttribute" OID="73d3e562-fcdc-4742-b528-c76980216452" ParentLink="PortDeclaration_CLRAttribute" LowerBound="149.1" HigherBound="150.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruReceive" />
+                    <om:Property Name="OutPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" />
+                    <om:Property Name="TransportType" Value="SOAP" />
+                    <om:Property Name="URI" Value="http://localhost:55661/ServiceEnchere_NB.asmx" />
+                    <om:Property Name="IsDynamic" Value="False" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="57dfa598-e8fd-4719-bb42-28ed31eb9e2e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="151.1" HigherBound="153.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="214" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_AffecterTransactionAgent" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_EvaluationTransactionToAgent" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="5fe8f849-7384-4ba6-9bd6-6bcff8e9c4ca" ParentLink="PortDeclaration_CLRAttribute" LowerBound="151.1" HigherBound="152.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="854830c4-f40d-4327-aa59-d9361c88ff96" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="153.1" HigherBound="155.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="215" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_EvaluationTransactionFromAgent" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortReception_EvaluationTransactionFromAgent" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="a1188dec-0ac7-48d9-9c4b-9f4f930ba2fa" ParentLink="PortDeclaration_CLRAttribute" LowerBound="153.1" HigherBound="154.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f484fea0-1fa5-4cd1-92c6-d91a8dbc60a9" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="155.1" HigherBound="157.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="272" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_ErreurProcessusEnchereToLog" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_ErreurProcessusEnchereToLog" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="9fd9aea8-8282-4260-b2a3-54aca77b334e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="155.1" HigherBound="156.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="76649c20-f857-4259-b469-f5bb8416e0e0" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="157.1" HigherBound="159.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="50" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortEnvoiType_ErreurSauvegarderDemandeCreationEnchere" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortEnvoi_ErreurSauvegarderDemandeCreationEnchereToLog" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="71204df5-2306-4f4d-af75-abe1004e3ac0" ParentLink="PortDeclaration_CLRAttribute" LowerBound="157.1" HigherBound="158.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="04f29722-efd9-4b3c-a8af-2e6a1ef0152c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="159.1" HigherBound="161.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="52" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BiztalkEnchereOrchestration.PortReceptionType_Encherissement" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortReception_EncherissementFromEncherisseur" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="625f0d87-1a10-480f-a69d-6530ffd3e96d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="159.1" HigherBound="160.1">
+                    <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
         </om:Element>
@@ -1988,7 +1994,7 @@ module BiztalkEnchereOrchestration
                                 transform (EncherissementGagnantMessage) = BiztalkEnchereOrchestration.Mapper.MapRecupererEncherissementGagnantToEncherissementGagnant (RecupererEncherissementGagnantResponseMessage.RecupererEncherissementGagnantResult);
                             }
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b34616c-f7bd-4e41-a4f5-040c05a809c2")]
-                            if (EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdEnchere) == 0 )
+                            if (EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdEnchere) == 0)
                             {
                                 [Microsoft.XLANGs.BaseTypes.DesignerPosition("a183f41b-5751-4959-a0c3-c67d8688ebef")]
                                 send (PortEnvoi_CourrielAucunGagnantToVendeur.Opération_1, EnchereMessage, CommonIdUtilisateur_Vendeur_CorrelationSet);
@@ -2011,7 +2017,7 @@ module BiztalkEnchereOrchestration
                                         construct BannirEncherisseurGagnantRequestMessage
                                         {
                                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("403fa46a-064a-42f9-9dd1-5a957b322ad2")]
-                                            BannirEncherisseurGagnantRequestMessage.pIdUtilisateur_EncherisseurGagnant = CommonIdEnchere_CorelationSet(BiztalkEnchereSchemas.CommonIdEnchere);
+                                            BannirEncherisseurGagnantRequestMessage.pIdUtilisateur_EncherisseurGagnant = EncherissementGagnantMessage(BiztalkEnchereSchemas.PropertySchema.IdUtilisateur_EncherisseurGagnant);
                                         }
                                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("91a7136f-6b47-4a3a-8745-ebd01256bca6")]
                                         send (PortEnvoi_SauvegarderDemandeCreationEnchereRequest.BannirEncherisseurGagnant, BannirEncherisseurGagnantRequestMessage);
@@ -2123,6 +2129,8 @@ module BiztalkEnchereOrchestration
                             }
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ab84d8e-6533-43f9-b996-92907bad112c")]
                             send (PortEnvoi_ErreurProcessusEnchereToLog.Opération_1, ErreurProcessusEnchereMessage);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("91bd984b-54c4-453a-a908-98801b68714e")]
+                            suspend "Exception levée, processus en pause";
                         }
                     }
                 }

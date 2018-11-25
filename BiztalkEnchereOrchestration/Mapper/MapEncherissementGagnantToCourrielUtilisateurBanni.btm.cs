@@ -19,6 +19,9 @@ namespace BiztalkEnchereOrchestration.Mapper {
       <NomUtilisateur>
         <xsl:value-of select=""Utilisateur_Encherisseur/NomUtilisateur/text()"" />
       </NomUtilisateur>
+      <NomEnchere>
+        <xsl:text>""Enchere""</xsl:text>
+      </NomEnchere>
     </ns0:CourrielUtilisateurBanni>
   </xsl:template>
 </xsl:stylesheet>";
