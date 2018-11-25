@@ -2,7 +2,7 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="9a25c5a3-2be1-4090-a2ae-fad56dfd826e" LowerBound="1.1" HigherBound="108.1">
+    <om:Element Type="Module" OID="d351b09f-9af5-4655-9db8-f1eb7a57d7bd" LowerBound="1.1" HigherBound="108.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB_" />
         <om:Property Name="Signal" Value="False" />
@@ -12,182 +12,182 @@
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="BiztalkEnchereOrchestration.WebServiceEnchere.ServiceEnchere_NB" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="MethodMessageOperation" OID="b8f9f75e-ed3a-4527-a40d-9eb62d7418aa" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="335b0656-6f9b-404c-b4a4-6da5f67a598e" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderDemandeCreationEnchere" />
                 <om:Property Name="OperationDirection" Value="Request" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderDemandeCreationEnchere_request" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="17674233-b6a9-4dfb-8195-33691c46157f" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="8220e087-39d6-4b1e-8332-02036d88b45e" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.WebServiceEnchere.Reference.BO_DemandeCreationEnchere" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="pDemandeCreationEnchere" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="6a519891-e722-4332-8c65-aad4dc47fb0c" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="e6b04061-e18f-4f97-9046-42f732bce7f1" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderDemandeCreationEnchere" />
                 <om:Property Name="OperationDirection" Value="Response" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderDemandeCreationEnchere_response" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="b0c7226b-e178-4372-8c54-517a56427756" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="977fa420-cad3-49bc-9f9f-d64f27f91752" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.WebServiceEnchere.Reference.BO_Enchere" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="SauvegarderDemandeCreationEnchereResult" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="1054e644-1049-4eb4-b709-384b085fc4c8" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="a884b09d-33cc-4294-bdf2-bb2bb6b449cc" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderEncherissement" />
                 <om:Property Name="OperationDirection" Value="Request" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderEncherissement_request" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="e315fbde-6db7-4dc3-ac22-a18140959174" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="e70bf06e-397b-4926-8919-0c8cea794d08" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.WebServiceEnchere.Reference.BO_Encherissement" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="pEncherissement" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="6fdb9ffd-3f1e-4128-9f31-53b89b9be581" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="9f586f56-7e79-4041-95ac-2d29256d1602" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderEncherissement" />
                 <om:Property Name="OperationDirection" Value="Response" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderEncherissement_response" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="8082c21c-694a-44f0-9530-cda9fba0bb65" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="8e2975c8-6b91-48c6-abd4-1b85aa568aec" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Boolean" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="SauvegarderEncherissementResult" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="f93023e9-647e-4428-a83a-4f098132180f" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="b2d48ccb-94dc-4f52-9663-650d437ce861" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="BannirEncherisseurGagnant" />
                 <om:Property Name="OperationDirection" Value="Request" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="BannirEncherisseurGagnant_request" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="fec0da75-a0fc-4139-858b-c0797cda5f4f" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="93a92ca8-6048-45de-baa5-770619506d44" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Int32" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="pIdUtilisateur_EncherisseurGagnant" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="0202b83c-3fda-42e9-afa3-84192d1c5b17" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="c7e54dad-9307-4b1f-b5e8-a232d37adcda" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="BannirEncherisseurGagnant" />
                 <om:Property Name="OperationDirection" Value="Response" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="BannirEncherisseurGagnant_response" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="f47e51d4-6ea6-43d7-8499-b8ffbbb1056f" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="af5b581e-c3f0-4c06-99dc-e4e77df3ced5" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Boolean" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="BannirEncherisseurGagnantResult" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="6fdb64ae-777b-476e-b0cc-a8be068d5c7d" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="002e9f4c-63da-4aa2-9b20-8994bdc9e86e" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderInfosPaiement" />
                 <om:Property Name="OperationDirection" Value="Request" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderInfosPaiement_request" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="19f6477f-28ea-4e89-9d4c-aaefdedac340" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="149862f6-010e-40a2-afa9-bf5b4fab4747" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.WebServiceEnchere.Reference.BO_Paiement" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="pPaiement" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="9b790194-ee7c-4683-aba6-4d8a212bcc16" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="285aa0bc-3a7c-41c9-b86d-d8bf994969c6" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderInfosPaiement" />
                 <om:Property Name="OperationDirection" Value="Response" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderInfosPaiement_response" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="d91a2c88-9aee-4d76-8fe9-1674885a1dbb" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="5d7f4993-9351-4754-9314-f965e27766ac" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Boolean" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="SauvegarderInfosPaiementResult" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="28d64a9f-c86d-4941-a17c-b9c148990931" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="6fce7214-d139-4a4f-ba93-36cf4d467cc2" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderEvaluation" />
                 <om:Property Name="OperationDirection" Value="Request" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderEvaluation_request" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="faf92573-4c3a-40f7-a164-1a456d443826" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="8eb40eee-7d76-42c3-8562-db6e275f5bc0" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.WebServiceEnchere.Reference.BO_Evaluation" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="pEvaluation" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="4d8b6533-4765-4da2-b5df-dbcfcd02287a" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="5e016e16-f513-4a07-975d-9149b6e88b60" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="SauvegarderEvaluation" />
                 <om:Property Name="OperationDirection" Value="Response" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="SauvegarderEvaluation_response" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="82162a25-d257-487d-b2ff-07ebb6819b0e" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="6b1e6e91-0cfe-435d-ba5c-a5519f70a10c" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Boolean" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="SauvegarderEvaluationResult" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="00dfa5c6-63f7-4719-b2fe-5d8a3a223584" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="1ae9290c-136e-4004-abad-2f7d9e7c7df3" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="BannirVendeur" />
                 <om:Property Name="OperationDirection" Value="Request" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="BannirVendeur_request" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="91bbe047-a566-4730-affc-6a0d8d1ff484" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="fe0f3f1d-7c19-4472-a5d5-504faa1ceedf" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Int32" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="pIdUtilisateur_Vendeur" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="0701c0a5-afb9-47e6-90f9-36b61032c2d7" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="ab903b46-ef18-4f97-8432-eb42996c0f27" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="BannirVendeur" />
                 <om:Property Name="OperationDirection" Value="Response" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="BannirVendeur_response" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="b77c643f-121d-490a-bf6e-0a59e9d76140" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="610a1de0-c22b-43e4-870f-f23d13c32adb" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Boolean" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="BannirVendeurResult" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="9e9a3b10-eda9-441d-96db-dc4de7fc893e" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="813d36b8-151e-4537-afa9-bd2bdde7d335" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="RecupererEncherissementGagnant" />
                 <om:Property Name="OperationDirection" Value="Request" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="RecupererEncherissementGagnant_request" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="2d2e7203-cfae-45f2-b378-d8172facd79b" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="5f34439c-4bee-4270-bb66-38c7d02d7712" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="System.Int32" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="idEnchere" />
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MethodMessageOperation" OID="9e58e610-3c41-43d4-9174-ab94b5b08004" ParentLink="MethodMessageType_MethodMessageOperation">
+            <om:Element Type="MethodMessageOperation" OID="4f1a61bd-4a1c-4bb7-82c2-7409fd106541" ParentLink="MethodMessageType_MethodMessageOperation">
                 <om:Property Name="OperationName" Value="RecupererEncherissementGagnant" />
                 <om:Property Name="OperationDirection" Value="Response" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="RecupererEncherissementGagnant_response" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="WebOperationPart" OID="a8c415e2-63aa-4035-a728-225b6ef69c17" ParentLink="MethodMessageOperation_WebOperationPart">
+                <om:Element Type="WebOperationPart" OID="15e87519-21fa-4578-871c-aacb6614c095" ParentLink="MethodMessageOperation_WebOperationPart">
                     <om:Property Name="ClassName" Value="BiztalkEnchereOrchestration.WebServiceEnchere.Reference.BO_EncherissementGagnant" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="RecupererEncherissementGagnantResult" />
@@ -195,7 +195,7 @@
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="TargetXMLNamespaceAttribute" OID="d36e30ac-0931-40a2-b4ea-f1096cdc9f6e" ParentLink="Module_CLRAttribute" LowerBound="2.1" HigherBound="3.1">
+        <om:Element Type="TargetXMLNamespaceAttribute" OID="53887283-ee03-428c-bbbc-3f965400ca7a" ParentLink="Module_CLRAttribute" LowerBound="2.1" HigherBound="3.1">
             <om:Property Name="TargetXMLNamespace" Value="http://tempuri.org/" />
             <om:Property Name="Signal" Value="False" />
         </om:Element>

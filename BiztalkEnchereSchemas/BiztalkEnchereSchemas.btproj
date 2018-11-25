@@ -81,6 +81,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BizTalkEnchere.snk" />
+    <Schema Include="ErreurSauvegarderDemandeCreationEnchere.xsd">
+      <TypeName>ErreurSauvegarderDemandeCreationEnchere</TypeName>
+      <Namespace>BiztalkEnchereSchemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="ErreurProcessusEnchere.xsd">
+      <TypeName>ErreurProcessusEnchere</TypeName>
+      <Namespace>BiztalkEnchereSchemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="EvaluationTransaction.xsd">
       <TypeName>EvaluationTransaction</TypeName>
       <Namespace>BiztalkEnchereSchemas</Namespace>
@@ -125,6 +135,20 @@
   <ItemGroup>
     <Map Include="MapDemandeCreationEnchereToEnchere.btm">
       <TypeName>MapDemandeCreationEnchereToEnchere</TypeName>
+      <Namespace>BiztalkEnchereSchemas</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MapEnchereToErreurProcessusEnchere.btm">
+      <TypeName>MapEnchereToErreurProcessusEnchere</TypeName>
+      <Namespace>BiztalkEnchereSchemas</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MapDemandeCreationEnchereToErreurSauvegarderDemandeCreationEnchere.btm">
+      <TypeName>MapDemandeCreationEnchereToErreurSauvegarderDemandeCreationEnchere</TypeName>
       <Namespace>BiztalkEnchereSchemas</Namespace>
       <SubType>Task</SubType>
     </Map>
