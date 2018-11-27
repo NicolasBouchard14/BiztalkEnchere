@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiztalkEnchereSchemas", "Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiztalkEnchereOrchestration", "BiztalkEnchereOrchestration\BiztalkEnchereOrchestration.btproj", "{EC6952E1-F188-41A0-A254-DD7B31C163DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceEnchere_NB", "..\ServiceEnchere_NB\ServiceEnchere_NB\ServiceEnchere_NB.csproj", "{C3993028-CE1A-4597-9E74-5E55173F0B81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{EC6952E1-F188-41A0-A254-DD7B31C163DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC6952E1-F188-41A0-A254-DD7B31C163DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EC6952E1-F188-41A0-A254-DD7B31C163DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C3993028-CE1A-4597-9E74-5E55173F0B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3993028-CE1A-4597-9E74-5E55173F0B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3993028-CE1A-4597-9E74-5E55173F0B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3993028-CE1A-4597-9E74-5E55173F0B81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
